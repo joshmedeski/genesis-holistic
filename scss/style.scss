@@ -1,9 +1,9 @@
 /*
-  Theme Name: BG Mobile First
-  Theme URI: http://briangardner.com/themes/mobile-first/
+  Theme Name: Amy Jo Beaver
+  Theme URI: http://medeskidesign.com/themes/amyjobeaver
   Description: A mobile responsive and HTML5 theme built for the Genesis Framework.
-  Author: StudioPress
-  Author URI: http://briangardner.com/
+  Author: Medeski Design
+  Author URI: http://medeskidesign.com/
 
   Version: 1.0.2
 
@@ -631,6 +631,14 @@ th {
   padding: 0;
   position: absolute;
   width: 1px;
+}
+
+/* Full-Image
+--------------------------------------------- */
+
+#full-image {
+  overflow: hidden;
+  max-height: 350px;
 }
 
 /* Titles
