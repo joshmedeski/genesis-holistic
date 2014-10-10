@@ -230,6 +230,21 @@ td, th {
 
 /* Defaults
 ---------------------------------------------------------------------------------------------------- */
+/* Fonts */
+@font-face {
+  font-family: 'dubielplainregular';
+  src: url('fonts/dubielplain_regular_macroman/Dubiel-webfont.eot');
+  src: url('fonts/dubielplain_regular_macroman/Dubiel-webfont.eot?#iefix') format('embedded-opentype'), url('fonts/dubielplain_regular_macroman/Dubiel-webfont.woff') format('woff'), url('fonts/dubielplain_regular_macroman/Dubiel-webfont.ttf') format('truetype'), url('fonts/dubielplain_regular_macroman/Dubiel-webfont.svg#dubielplainregular') format('svg');
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'dubielitalic';
+  src: url('fonts/dubiel_italic_macroman/DubielItalic-webfont.eot');
+  src: url('fonts/dubiel_italic_macroman/DubielItalic-webfont.eot?#iefix') format('embedded-opentype'), url('fonts/dubiel_italic_macroman/DubielItalic-webfont.woff') format('woff'), url('fonts/dubiel_italic_macroman/DubielItalic-webfont.ttf') format('truetype'), url('fonts/dubiel_italic_macroman/DubielItalic-webfont.svg#dubielitalic') format('svg');
+  font-weight: normal;
+  font-style: normal; }
+
 /* Colors */
 /* Mixins */
 /* Typographical Elements
@@ -296,7 +311,7 @@ blockquote::before {
 --------------------------------------------- */
 h1, h2, h3, h4, h5, h6 {
   color: #333;
-  font-family: 'Josefin Slab', serif;
+  font-family: 'dubielplainregular', serif;
   font-weight: 700;
   line-height: 1.2;
   margin: 0 0 20px; }
@@ -391,13 +406,13 @@ input[type="checkbox"], input[type="image"], input[type="radio"] {
   width: auto; }
 
 ::-moz-placeholder {
-  color: #333;
+  color: #eee;
   font-weight: 400;
   opacity: 1;
   -webkit-font-smoothing: antialiased; }
 
 ::-webkit-input-placeholder {
-  color: #333;
+  color: #eee;
   font-weight: 400;
   -webkit-font-smoothing: antialiased; }
 
@@ -561,7 +576,8 @@ th {
 
 .widget-title {
   font-size: 22px;
-  margin-bottom: 20px; }
+  margin-bottom: 20px;
+  font-family: 'dubielitalic', serif; }
 
 .footer-widgets .widget-title {
   color: #fff; }
@@ -607,6 +623,16 @@ a.alignright, img.alignright, .wp-caption.alignright {
 .entry-content p.wp-caption-text {
   margin-bottom: 0; }
 
+.sticky {
+  background: #f7f7f7;
+  padding: 10px; }
+  .sticky .entry-header, .sticky .entry-content, .sticky .entry-footer {
+    border: 1px solid #fff;
+    padding: 10px;
+    margin-bottom: 10px; }
+  .sticky .entry-header .entry-meta, .sticky .entry-footer .entry-meta, .sticky .entry-footer, .sticky .content .share-after {
+    margin-bottom: 0; }
+
 /* Widgets
 ---------------------------------------------------------------------------------------------------- */
 .widget {
@@ -639,7 +665,7 @@ a.alignright, img.alignright, .wp-caption.alignright {
   border-width: 1px;
   color: #fff;
   margin: 5px;
-  padding: 10px; }
+  padding: 30px; }
 
 /* Featured Content
 --------------------------------------------- */
@@ -678,12 +704,11 @@ a.alignright, img.alignright, .wp-caption.alignright {
 
 .cta-widget .enews .widget-title {
   margin-bottom: 0;
-  line-height: 1; }
+  line-height: 1;
+  font-size: 30px; }
 
 .cta-widget .enews input {
-  background-color: transparent;
-  border: 1px solid #fff;
-  color: #fff;
+  border-color: #fff;
   margin-right: 20px;
   margin-bottom: 0;
   padding: 10px; }
@@ -696,7 +721,7 @@ a.alignright, img.alignright, .wp-caption.alignright {
   padding: 40px; }
 
 .enews-widget input, .enews-widget input:focus {
-  border: 1px solid #333; }
+  color: #333; }
 
 .enews-widget input {
   font-size: 16px;
@@ -709,8 +734,7 @@ a.alignright, img.alignright, .wp-caption.alignright {
   width: 100%; }
 
 .enews-widget input:hover[type="submit"] {
-  background-color: #fff;
-  color: #333; }
+  background-color: #4b9fff; }
 
 .enews form + p {
   margin-top: 24px; }
@@ -775,7 +799,7 @@ body .simple-social-icons ul li a:hover {
 /* Site Title and Description
 --------------------------------------------- */
 .site-title {
-  font-size: 30px;
+  font-size: 35px;
   letter-spacing: 1px;
   margin-bottom: 0;
   text-transform: uppercase;
@@ -785,7 +809,8 @@ body .simple-social-icons ul li a:hover {
   color: #333; }
 
 .site-description {
-  font-size: 18px;
+  font-family: 'dubielitalic', serif;
+  font-size: 20px;
   font-weight: 400;
   margin-bottom: 10px; }
 
@@ -1003,7 +1028,9 @@ p.entry-meta {
   border: 1px solid #fff; }
 
 .archive-pagination .active {
-  background-color: #7effc3; }
+  background-color: #e4e4e4; }
+  .archive-pagination .active:hover {
+    background-color: #e4e4e4; }
 
 /* Comments
 --------------------------------------------- */
@@ -1100,7 +1127,7 @@ p.form-submit, .entry-comments .children .comment, .entry-comments .comment-auth
     font-size: 16px;
     padding: 20px 2%;
     text-align: center;
-    color: #fff;
+    color: #333;
     border-color: #fff;
     border-style: solid;
     border-width: 1px;
@@ -1110,10 +1137,10 @@ p.form-submit, .entry-comments .children .comment, .entry-comments .comment-auth
   margin-bottom: 0; }
 
 .site-footer a {
-  color: #fff;
+  color: #333;
   text-decoration: underline; }
   .site-footer a:hover {
-    color: #333; }
+    color: #777; }
 
 /* Media Queries
 ---------------------------------------------------------------------------------------------------- */
