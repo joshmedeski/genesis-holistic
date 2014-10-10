@@ -126,13 +126,40 @@ input[type="search"] {
 /* Defaults
 ---------------------------------------------------------------------------------------------------- */
 
+/* Fonts */
+@font-face {
+  font-family: 'dubielplainregular';
+  src: url('fonts/dubielplain_regular_macroman/Dubiel-webfont.eot');
+  src: url('fonts/dubielplain_regular_macroman/Dubiel-webfont.eot?#iefix') format('embedded-opentype'),
+  url('fonts/dubielplain_regular_macroman/Dubiel-webfont.woff') format('woff'),
+  url('fonts/dubielplain_regular_macroman/Dubiel-webfont.ttf') format('truetype'),
+  url('fonts/dubielplain_regular_macroman/Dubiel-webfont.svg#dubielplainregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'dubielitalic';
+  src: url('fonts/dubiel_italic_macroman/DubielItalic-webfont.eot');
+  src: url('fonts/dubiel_italic_macroman/DubielItalic-webfont.eot?#iefix') format('embedded-opentype'),
+  url('fonts/dubiel_italic_macroman/DubielItalic-webfont.woff') format('woff'),
+  url('fonts/dubiel_italic_macroman/DubielItalic-webfont.ttf') format('truetype'),
+  url('fonts/dubiel_italic_macroman/DubielItalic-webfont.svg#dubielitalic') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+$dubiel: 'dubielplainregular', serif;
+$dubiel--italic: 'dubielitalic', serif;
+
 /* Colors */
-$pink: #ffb4b1;
-$green: #b1ffdb;
-$blue: #b1d5ff;
+$primary-color: #ffb4b1; // Pink
+$secondary-color: #b1d5ff; // Blue
+$tertiary-color: #b1ffdb; // Green
+$mute-color: #eee; // Gray
+
 $orange: #ffdbb1;
 $black: #333;
-$gray: #eee;
 
 /* Mixins */
 
@@ -193,7 +220,7 @@ $shadow: unquote($shadow);
 --------------------------------------------- */
 
 body {
-  background-color: lighten($green,10%);
+  background-color: lighten($tertiary-color,10%);
   color: #333;
   font-family: 'Open Sans', sans-serif;
   font-size: 18px;
@@ -230,7 +257,7 @@ textarea:focus,
 }
 
 a {
-  color: darken($pink,10%);
+  color: darken($primary-color,10%);
   text-decoration: none;
 }
 
@@ -290,7 +317,7 @@ h4,
 h5,
 h6 {
   color: #333;
-  font-family: 'Josefin Slab', serif;
+  font-family: $dubiel;
   font-weight: 700;
   line-height: 1.2;
   margin: 0 0 20px;
@@ -424,14 +451,14 @@ input[type="radio"] {
 }
 
 ::-moz-placeholder {
-  color: #333;
+  color: #eee;
   font-weight: 400;
   opacity: 1;
   -webkit-font-smoothing: antialiased;
 }
 
 ::-webkit-input-placeholder {
-  color: #333;
+  color: #eee;
   font-weight: 400;
   -webkit-font-smoothing: antialiased;
 }
@@ -441,7 +468,7 @@ input[type="button"],
 input[type="reset"],
 input[type="submit"],
 .button {
-  background-color: darken($green,15%);
+  background-color: darken($tertiary-color,15%);
   border: 0;
   color: #fff;
   cursor: pointer;
@@ -458,7 +485,7 @@ input[type="submit"],
 .footer-widgets input[type="reset"],
 .footer-widgets input[type="submit"],
 .footer-widgets .button {
-  background-color: darken($green,15%);
+  background-color: darken($tertiary-color,15%);
   color: #fff;
 }
 
@@ -467,7 +494,7 @@ input:hover[type="button"],
 input:hover[type="reset"],
 input:hover[type="submit"],
 .button:hover {
-  background-color: darken($green,30%);
+  background-color: darken($tertiary-color,30%);
   color: #fff;
 }
 
@@ -664,6 +691,7 @@ th {
 .widget-title {
   font-size: 22px;
   margin-bottom: 20px;
+  font-family: $dubiel--italic;
 }
 
 .footer-widgets .widget-title {
@@ -732,6 +760,18 @@ img.alignright,
 }
 
 .sticky {
+  background: #f7f7f7;
+  padding: 10px;
+
+  .entry-header, .entry-content, .entry-footer {
+    border: 1px solid #fff;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  .entry-header .entry-meta, .entry-footer .entry-meta, .entry-footer, .content .share-after {
+    margin-bottom: 0;
+  }
+
 }
 
 
@@ -765,7 +805,7 @@ img.alignright,
 }
 
 .cta-widget {
-  background: $blue;
+  background: $secondary-color;
   padding: 1px;
 }
 
@@ -775,7 +815,7 @@ img.alignright,
   border-width: 1px;
   color: #fff;
   margin: 5px;
-  padding: 10px;
+  padding: 30px;
 }
 
 /* Featured Content
@@ -815,13 +855,12 @@ img.alignright,
 .cta-widget .enews .widget-title {
   margin-bottom: 0;
   line-height: 1;
+  font-size: 30px;
+
 }
 
 .cta-widget .enews input {
-  background-color: transparent;
-  border: 1px solid #fff;
-  color: #fff;
-  // max-width: 300px;
+  border-color: #fff;
   margin-right: 20px;
   margin-bottom: 0;
   padding: 10px;
@@ -839,7 +878,7 @@ img.alignright,
 
 .enews-widget input,
 .enews-widget input:focus {
-  border: 1px solid #333;
+  color: #333;
 }
 
 .enews-widget input {
@@ -848,15 +887,14 @@ img.alignright,
 }
 
 .enews-widget input[type="submit"] {
-  background-color: darken($blue,10%);
+  background-color: darken($secondary-color,10%);
   color: #fff;
   margin: 0;
   width: 100%;
 }
 
 .enews-widget input:hover[type="submit"] {
-  background-color: #fff;
-  color: #333;
+  background-color: darken($secondary-color,20%);;
 }
 
 .enews form + p {
@@ -900,8 +938,8 @@ img.alignright,
 .content .share-filled .stumbleupon .count:hover,
 .content .share-filled .twitter .count,
 .content .share-filled .twitter .count:hover {
-  color: $blue;
-  border: 1px solid $blue;
+  color: $secondary-color;
+  border: 1px solid $secondary-color;
 }
 
 .content .share-filled .facebook .share,
@@ -916,7 +954,7 @@ img.alignright,
 .content .share-filled .stumbleupon:hover .count,
 .content .share-filled .twitter .share,
 .content .share-filled .twitter:hover .count {
-  background: $blue !important;
+  background: $secondary-color !important;
 }
 
 .content .share-filled .facebook:hover .count,
@@ -932,11 +970,11 @@ img.alignright,
 --------------------------------------------- */
 
 body .simple-social-icons ul li {
-  background: $blue !important;
+  background: $secondary-color !important;
 }
 
 body .simple-social-icons ul li a {
-  background-color: $blue !important;
+  background-color: $secondary-color !important;
   border-radius: 0 !important;
   padding: 8px !important;
   margin: 5px;
@@ -944,7 +982,7 @@ body .simple-social-icons ul li a {
 }
 
 body .simple-social-icons ul li a:hover {
-  background-color: darken($blue,10%) !important;
+  background-color: darken($secondary-color,10%) !important;
 }
 
 /* Jetpack
@@ -972,7 +1010,7 @@ body .simple-social-icons ul li a:hover {
 --------------------------------------------- */
 
 .site-title {
-  font-size: 30px;
+  font-size: 35px;
   letter-spacing: 1px;
   margin-bottom: 0;
   text-transform: uppercase;
@@ -985,7 +1023,8 @@ body .simple-social-icons ul li a:hover {
 }
 
 .site-description {
-  font-size: 18px;
+  font-family: $dubiel--italic;
+  font-size: 20px;
   font-weight: 400;
   margin-bottom: 10px;
 }
@@ -1081,7 +1120,7 @@ body .simple-social-icons ul li a:hover {
 --------------------------------------------- */
 
 .nav-primary {
-  background-color: $pink;
+  background-color: $primary-color;
 }
 
 .nav-primary .wrap {
@@ -1265,7 +1304,7 @@ p.entry-meta {
     background-color: darken(#bbb,5%);
   }
   .active {
-    background-color: $pink;
+    background-color: $primary-color;
   }
 }
 
@@ -1280,7 +1319,10 @@ p.entry-meta {
 }
 
 .archive-pagination .active {
-  background-color: darken($green,10%);
+  background-color: lighten(#bbb,16%);
+  &:hover {
+    background-color: lighten(#bbb,16%);
+  }
 }
 
 /* Comments
@@ -1414,14 +1456,14 @@ p.form-submit,
 .site-footer {
   background-color: darken(#eee,10%);
   .wrap {
-  font-size: 16px;
-  padding: 20px 2%;
-  text-align: center;
-  color: #fff;
-  border-color: #fff;
-  border-style: solid;
-  border-width: 1px;
-  margin: 5px;
+    font-size: 16px;
+    padding: 20px 2%;
+    text-align: center;
+    color: #333;
+    border-color: #fff;
+    border-style: solid;
+    border-width: 1px;
+    margin: 5px;
   }
 }
 
@@ -1430,9 +1472,9 @@ p.form-submit,
 }
 
 .site-footer a {
-  color: #fff;
+  color: #333;
   text-decoration: underline;
-  &:hover { color: #333; }
+  &:hover { color: #777; }
 }
 
 
@@ -1563,8 +1605,8 @@ p.form-submit,
   }
 
   .nav-primary .sub-menu {
-    background-color: $pink;
-    border-top: 1px solid $pink;
+    background-color: $primary-color;
+    border-top: 1px solid $primary-color;
   }
 
   .nav-primary .sub-menu a {
