@@ -7,6 +7,9 @@ define( 'CHILD_THEME_NAME', 'Amy Jo Beaver' );
 define( 'CHILD_THEME_URL', 'http://medeskidesign.com/themes/amyjobeaver/' );
 define( 'CHILD_THEME_VERSION', '1.0.0' );
 
+
+require_once( get_stylesheet_directory() . '/tgm_plugin_activation.php');
+
 //* Enqueue scripts and styles
 add_action( 'wp_enqueue_scripts', 'mobile_first_scripts_styles' );
 function mobile_first_scripts_styles() {
@@ -37,6 +40,7 @@ unregister_sidebar( 'sidebar-alt' );
 genesis_unregister_layout( 'content-sidebar-sidebar' );
 genesis_unregister_layout( 'sidebar-sidebar-content' );
 genesis_unregister_layout( 'sidebar-content-sidebar' );
+
 
 //* Remove comment form allowed tags
 add_filter( 'comment_form_defaults', 'mobile_first_remove_comment_form_allowed_tags' );
@@ -91,6 +95,7 @@ add_action( 'genesis_before_content_sidebar_wrap', 'genesis_do_subnav' );
 //     'description' => __( 'This is the top section on the homepage.', 'amyjobeaver' ),
 // ) );
 
+
 /** Add the featured image section */
 add_action( 'genesis_after_header', 'full_featured_image');
 function full_featured_image() {
@@ -122,3 +127,7 @@ genesis_register_sidebar( array(
     'description' => __( 'This displays below the primary nav and featured image', 'jm')
 ) );
 
+add_theme_support( 'genesis-style-selector', array(
+'sample-red' => __( 'Red', 'sample' ),
+'sample-green' => __( 'Green', 'sample' )
+) );
