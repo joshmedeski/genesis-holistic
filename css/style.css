@@ -5,13 +5,9 @@
   Author: Medeski Design
   Author URI: http://medeskidesign.com/
 
-  Version: 0.0.1
+  Version: 1.0.2
 
-  GitHub Theme URI: https://github.com/joshmedeski/amyjobeaver
-  GitHub Branch: master
-  GitHub Access Token: cccd6082ea89be2ee8d19a3115dd4b196a1d627a
-
-  Tags: white, one-column, two-columns, responsive-layout, custom-menu, full-width-template, sticky-post, theme-options, threaded-comments
+  Tags: black, orange, white, one-column, two-columns, responsive-layout, custom-menu, full-width-template, sticky-post, theme-options, threaded-comments
 
   Template: genesis
   Template Version: 2.1.2
@@ -414,13 +410,13 @@ input[type="checkbox"], input[type="image"], input[type="radio"] {
   width: auto; }
 
 ::-moz-placeholder {
-  color: #bbb;
+  color: #eee;
   font-weight: 400;
   opacity: 1;
   -webkit-font-smoothing: antialiased; }
 
 ::-webkit-input-placeholder {
-  color: #bbb;
+  color: #eee;
   font-weight: 400;
   -webkit-font-smoothing: antialiased; }
 
@@ -868,17 +864,9 @@ body .simple-social-icons ul li a:hover {
   opacity: 1; }
 
 .genesis-nav-menu .right {
-  display: inline-block;
-  color: #fff;
   float: right;
-  font-style: italic; }
-  .genesis-nav-menu .right a {
-    float: left; }
-  .genesis-nav-menu .right .date {
-    padding: 15px 25px; }
-  .genesis-nav-menu .right input {
-    padding: 10px;
-    border-color: #fff; }
+  font-style: italic;
+  padding: 15px 25px; }
 
 /* Site Header Navigation
 --------------------------------------------- */

@@ -451,14 +451,14 @@ input[type="radio"] {
 }
 
 ::-moz-placeholder {
-  color: #eee;
+  color: #bbb;
   font-weight: 400;
   opacity: 1;
   -webkit-font-smoothing: antialiased;
 }
 
 ::-webkit-input-placeholder {
-  color: #eee;
+  color: #bbb;
   font-weight: 400;
   -webkit-font-smoothing: antialiased;
 }
@@ -1099,6 +1099,21 @@ body .simple-social-icons ul li a:hover {
 .genesis-nav-menu .menu-item:hover > .sub-menu {
   left: auto;
   opacity: 1;
+}
+
+.genesis-nav-menu .right {
+  display: inline-block;
+  color: #fff;
+  float: right;
+  font-style: italic;
+  a {
+    float: left;
+  }
+  .date { padding: 15px 25px; }
+  input {
+    padding: 10px;
+    border-color: #fff;
+  }
 }
 
 /* Site Header Navigation
