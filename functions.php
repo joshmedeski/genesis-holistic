@@ -5,7 +5,7 @@ include_once( get_template_directory() . '/lib/init.php' );
 //* Child theme (do not remove)
 define( 'CHILD_THEME_NAME', 'Amy Jo Beaver' );
 define( 'CHILD_THEME_URL', 'http://medeskidesign.com/themes/amyjobeaver/' );
-define( 'CHILD_THEME_VERSION', '1.0.0' );
+define( 'CHILD_THEME_VERSION', '0.0.2' );
 
 // Includes
 require_once( get_stylesheet_directory() . '/tgm_plugin_activation.php');

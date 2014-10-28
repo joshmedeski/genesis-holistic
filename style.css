@@ -1,13 +1,17 @@
 /*
-  Theme Name: Amy Jo Beaver
-  Theme URI: http://medeskidesign.com/themes/amyjobeaver
-  Description: A mobile responsive and HTML5 theme built for the Genesis Framework.
-  Author: Medeski Design
-  Author URI: http://medeskidesign.com/
+  Theme Name: Holistic
+  Theme URI: http://joshmedeski.com/
+  Description: A Genesis Child theme built for life coaches and blogging women.
+  Author: Josh Medeski
+  Author URI: http://joshmedeski.com/
 
-  Version: 0.0.1
+  Version: 0.0.2
 
-  Tags: black, orange, white, one-column, two-columns, responsive-layout, custom-menu, full-width-template, sticky-post, theme-options, threaded-comments
+  GitHub Theme URI: https://github.com/joshmedeski/genesis-holistic
+  GitHub Branch: master
+  GitHub Access Token: cccd6082ea89be2ee8d19a3115dd4b196a1d627a
+
+  Tags: white, one-column, two-columns, responsive-layout, custom-menu, full-width-template, sticky-post, theme-options, threaded-comments
 
   Template: genesis
   Template Version: 2.1.2
@@ -174,7 +178,8 @@ input {
   line-height: normal; }
 
 input[type=checkbox], input[type=radio] {
-  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+       box-sizing: border-box;
   padding: 0; }
 
 input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer-spin-button {
@@ -183,7 +188,6 @@ input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer
 input[type=search] {
   -webkit-appearance: textfield;
   -moz-box-sizing: content-box;
-  -webkit-box-sizing: content-box;
   box-sizing: content-box; }
 
 input[type=search]::-webkit-search-cancel-button, input[type=search]::-webkit-search-decoration {
@@ -214,7 +218,6 @@ td, th {
 /* Box Sizing
 --------------------------------------------- */
 *, input[type="search"] {
-  -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
@@ -327,9 +330,6 @@ body {
 
 a, button, input:focus, input[type="button"], input[type="reset"], input[type="submit"], textarea:focus, .button, .gallery img, .archive-pagination li, .simple-social-icons ul li {
   -webkit-transition: all 0.1s ease-in-out;
-  -moz-transition: all 0.1s ease-in-out;
-  -ms-transition: all 0.1s ease-in-out;
-  -o-transition: all 0.1s ease-in-out;
   transition: all 0.1s ease-in-out; }
 
 ::-moz-selection {
@@ -857,7 +857,8 @@ a.alignright, img.alignright, .wp-caption.alignright {
 .simple-social-icons ul li a {
   border-radius: 0;
   border: 1px solid #fff;
-  box-sizing: content-box;
+  -moz-box-sizing: content-box;
+       box-sizing: content-box;
   color: #fff;
   display: inline-block;
   font-family: 'fontello';
@@ -950,9 +951,6 @@ a.alignright, img.alignright, .wp-caption.alignright {
   opacity: 1;
   position: relative;
   -webkit-transition: opacity 0.4s ease-in-out;
-  -moz-transition: opacity 0.4s ease-in-out;
-  -ms-transition: opacity 0.4s ease-in-out;
-  -o-transition: opacity 0.4s ease-in-out;
   transition: opacity 0.4s ease-in-out;
   z-index: 99; }
 
@@ -1338,12 +1336,22 @@ p.form-submit, .entry-comments .children .comment, .entry-comments .comment-auth
   .responsive-menu-icon, .responsive-menu > .menu-item-has-children:before, .responsive-menu .menu-open.menu-item-has-children:before {
     display: none; }
   .cta-widget .enews {
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-around;
-    align-items: center; }
+    -webkit-justify-content: space-around;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center; }
     .cta-widget .enews form {
+      display: -webkit-flex;
+      display: -ms-flexbox;
       display: flex;
-      justify-content: space-around; }
+      -webkit-justify-content: space-around;
+          -ms-flex-pack: distribute;
+              justify-content: space-around; }
     .cta-widget .enews input {
       margin-bottom: 0; }
     .cta-widget .enews .widget-title {
