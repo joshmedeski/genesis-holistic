@@ -58,12 +58,6 @@ function jm_amyjobeaver_register_required_plugins() {
             'required'           => true
         ),
         array(
-            'name'             => 'Simple Social Icons',
-            'slug'             => 'simple-social-icons',
-            'force_activation' => true,
-            'required'         => true
-        ),
-        array(
             'name'             => 'Genesis eNews Extended',
             'slug'             => 'genesis-enews-extended',
             'force_activation' => true,

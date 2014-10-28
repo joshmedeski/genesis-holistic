@@ -5,10 +5,11 @@ include_once( get_template_directory() . '/lib/init.php' );
 //* Child theme (do not remove)
 define( 'CHILD_THEME_NAME', 'Amy Jo Beaver' );
 define( 'CHILD_THEME_URL', 'http://medeskidesign.com/themes/amyjobeaver/' );
-define( 'CHILD_THEME_VERSION', '1.0.0' );
+define( 'CHILD_THEME_VERSION', '0.0.2' );
 
-
+// Includes
 require_once( get_stylesheet_directory() . '/tgm_plugin_activation.php');
+require_once( get_stylesheet_directory() . '/widget-social-icons.php');
 
 //* Enqueue scripts and styles
 add_action( 'wp_enqueue_scripts', 'mobile_first_scripts_styles' );
@@ -33,6 +34,15 @@ add_theme_support( 'genesis-responsive-viewport' );
 //* Add support for custom background
 add_theme_support( 'custom-background' );
 
+// Styles
+add_theme_support( 'genesis-style-selector', array(
+'theme-salmon' => __( 'Salmon', 'amyjobeaver' ),
+'theme-aquamarine' => __( 'Aquamarine', 'amyjobeaver' ),
+'theme-pariwinkle' => __( 'Periwinkle', 'amyjobeaver' ),
+'theme-citrus' => __( 'Citrus', 'amyjobeaver' ),
+'theme-mute' => __( 'Mute', 'amyjobeaver' ),
+) );
+
 //* Remove the secondary sidebar
 unregister_sidebar( 'sidebar-alt' );
 
@@ -40,6 +50,8 @@ unregister_sidebar( 'sidebar-alt' );
 genesis_unregister_layout( 'content-sidebar-sidebar' );
 genesis_unregister_layout( 'sidebar-sidebar-content' );
 genesis_unregister_layout( 'sidebar-content-sidebar' );
+
+
 
 
 //* Remove comment form allowed tags
@@ -127,7 +139,17 @@ genesis_register_sidebar( array(
     'description' => __( 'This displays below the primary nav and featured image', 'jm')
 ) );
 
-add_theme_support( 'genesis-style-selector', array(
-'sample-red' => __( 'Red', 'sample' ),
-'sample-green' => __( 'Green', 'sample' )
-) );
+
+//* Stop Simple Social Icons' CSS from loading and load our modified copy
+add_action( 'wp_enqueue_scripts', 'jm_amyjobeaver_disable_simple_social_icons_styles', 11 );
+function jm_amyjobeaver_disable_simple_social_icons_styles() {
+
+  if ( class_exists( 'Simple_Social_Icons_Widget' ) ) {
+
+    wp_dequeue_style( 'simple-social-icons-font');
+
+    wp_enqueue_style( 'simple-social-icons', get_bloginfo( 'stylesheet_directory' ) . '/css/simple-social-icons.css', array(), CHILD_THEME_VERSION );
+
+  }
+
+}
