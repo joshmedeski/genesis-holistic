@@ -5,7 +5,7 @@
   Author: Medeski Design
   Author URI: http://medeskidesign.com/
 
-  Version: 1.0.2
+  Version: 0.0.1
 
   Tags: black, orange, white, one-column, two-columns, responsive-layout, custom-menu, full-width-template, sticky-post, theme-options, threaded-comments
 
@@ -215,12 +215,44 @@ $shadow: unquote($shadow);
 @if $type == 'text' {text-shadow: $shadow;}
 }
 
+@mixin genesis-theme-style($theme-primary-color,$theme-secondary-color) {
+  %theme-primary-color   { color      : $theme-primary-color;   }
+  %theme-primary-bg      { background : $theme-primary-color;   }
+  %theme-secondary-color { color      : $theme-secondary-color; }
+  %theme-secondary-bg    { background : $theme-secondary-color; }
+  %theme-title-shadow {
+    @include long-shadow(text, $theme-secondary-color, 200, false, false, left);
+  }
+  & { background: lighten($theme-primary-color,30%) !important; }
+}
+
+// Themes
+
+.theme-salmon {
+  @include genesis-theme-style(#747dc7,#c7be74);
+}
+
+.theme-aquamarine {
+  @include genesis-theme-style(#00d4a4,#e800a9);
+}
+
+.theme-citrus {
+  @include genesis-theme-style(#f69e18,#f3be00);
+}
+
+.theme-pariwinkle {
+  @include genesis-theme-style(#747dc7,#c7be74);
+}
+
+.theme-mute {
+  @include genesis-theme-style(#555,#999);
+}
 
 /* Typographical Elements
 --------------------------------------------- */
 
 body {
-  background-color: lighten($tertiary-color,10%);
+  background: #e3e3e3;
   color: #333;
   font-family: 'Open Sans', sans-serif;
   font-size: 18px;
@@ -238,7 +270,9 @@ input[type="reset"],
 input[type="submit"],
 textarea:focus,
 .button,
-.gallery img {
+.gallery img,
+.archive-pagination li,
+.simple-social-icons ul li {
   -webkit-transition: all 0.1s ease-in-out;
   -moz-transition:    all 0.1s ease-in-out;
   -ms-transition:     all 0.1s ease-in-out;
@@ -259,6 +293,8 @@ textarea:focus,
 a {
   color: darken($primary-color,10%);
   text-decoration: none;
+
+  @extend %theme-primary-color;
 }
 
 a:hover {
@@ -468,7 +504,7 @@ input[type="button"],
 input[type="reset"],
 input[type="submit"],
 .button {
-  background-color: darken($tertiary-color,15%);
+  background-color: $primary-color;
   border: 0;
   color: #fff;
   cursor: pointer;
@@ -807,6 +843,8 @@ img.alignright,
 .cta-widget {
   background: $secondary-color;
   padding: 1px;
+
+  @extend %theme-secondary-bg;
 }
 
 .cta-widget > .wrap {
@@ -842,21 +880,10 @@ img.alignright,
 /* Genesis eNews Extended
 --------------------------------------------- */
 
-.cta-widget .enews {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  form {
-    display: flex;
-    justify-content: space-around;
-  }
-}
-
 .cta-widget .enews .widget-title {
-  margin-bottom: 0;
+  margin-bottom: 10px;
   line-height: 1;
   font-size: 30px;
-
 }
 
 .cta-widget .enews input {
@@ -864,6 +891,7 @@ img.alignright,
   margin-right: 20px;
   margin-bottom: 0;
   padding: 10px;
+  margin-bottom: 10px;
 }
 
 .enews-widget,
@@ -887,14 +915,14 @@ img.alignright,
 }
 
 .enews-widget input[type="submit"] {
-  background-color: darken($secondary-color,10%);
+  background: rgba(0,0,0,0.4);
   color: #fff;
   margin: 0;
   width: 100%;
 }
 
 .enews-widget input:hover[type="submit"] {
-  background-color: darken($secondary-color,20%);;
+  background: rgba(0,0,0,0.6);
 }
 
 .enews form + p {
@@ -940,6 +968,9 @@ img.alignright,
 .content .share-filled .twitter .count:hover {
   color: $secondary-color;
   border: 1px solid $secondary-color;
+
+  @extend %theme-secondary-color;
+  // @extend %theme-secondary-border;
 }
 
 .content .share-filled .facebook .share,
@@ -955,6 +986,8 @@ img.alignright,
 .content .share-filled .twitter .share,
 .content .share-filled .twitter:hover .count {
   background: $secondary-color !important;
+
+  @extend %theme-secondary-bg;
 }
 
 .content .share-filled .facebook:hover .count,
@@ -969,21 +1002,7 @@ img.alignright,
 /* Simple Social Icons
 --------------------------------------------- */
 
-body .simple-social-icons ul li {
-  background: $secondary-color !important;
-}
-
-body .simple-social-icons ul li a {
-  background-color: $secondary-color !important;
-  border-radius: 0 !important;
-  padding: 8px !important;
-  margin: 5px;
-  border: 1px solid #fff !important;
-}
-
-body .simple-social-icons ul li a:hover {
-  background-color: darken($secondary-color,10%) !important;
-}
+@import "simple-social-icons";
 
 /* Jetpack
 --------------------------------------------- */
@@ -1136,6 +1155,8 @@ body .simple-social-icons ul li a:hover {
 
 .nav-primary {
   background-color: $primary-color;
+
+  @extend %theme-primary-bg;
 }
 
 .nav-primary .wrap {
@@ -1312,11 +1333,14 @@ p.entry-meta {
 }
 
 .archive-pagination li {
+  background: $primary-color;
   float: left;
-  background-color: #bbb;
   margin-right: 10px;
+
+  @extend %theme-primary-bg;
+
   &:hover {
-    background-color: darken(#bbb,5%);
+    background-color: #333;
   }
   .active {
     background-color: $primary-color;
@@ -1334,9 +1358,9 @@ p.entry-meta {
 }
 
 .archive-pagination .active {
-  background-color: lighten(#bbb,16%);
+  background-color: #555;
   &:hover {
-    background-color: lighten(#bbb,16%);
+    background-color: #555;
   }
 }
 
@@ -1469,12 +1493,12 @@ p.form-submit,
 ---------------------------------------------------------------------------------------------------- */
 
 .site-footer {
-  background-color: darken(#eee,10%);
+  background-color: #333;
   .wrap {
     font-size: 16px;
     padding: 20px 2%;
     text-align: center;
-    color: #333;
+    color: #fff;
     border-color: #fff;
     border-style: solid;
     border-width: 1px;
@@ -1487,9 +1511,12 @@ p.form-submit,
 }
 
 .site-footer a {
-  color: #333;
+  color: #fff;
   text-decoration: underline;
-  &:hover { color: #777; }
+  &:hover {
+    color: $primary-color;
+    @extend %theme-primary-color;
+  }
 }
 
 
@@ -1499,6 +1526,7 @@ p.form-submit,
 @media only screen and (min-width: 800px) {
 
   .site-container {
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
     margin-bottom: 40px;
     margin-top: 40px;
     max-width: 1200px;
@@ -1557,7 +1585,12 @@ p.form-submit,
   }
 
   .site-title {
-    @include long-shadow(text, #f7f7f7, 200, false, false, left);
+    @include long-shadow(text, #ececec, 200, false, false, left);
+
+    &:hover {
+      @extend %theme-title-shadow;
+    }
+
   }
 
   .site-description {
@@ -1621,7 +1654,9 @@ p.form-submit,
 
   .nav-primary .sub-menu {
     background-color: $primary-color;
-    border-top: 1px solid $primary-color;
+    border-top: 1px solid #fff;
+
+    @extend %theme-primary-bg;
   }
 
   .nav-primary .sub-menu a {
@@ -1643,6 +1678,22 @@ p.form-submit,
   .responsive-menu > .menu-item-has-children:before,
   .responsive-menu .menu-open.menu-item-has-children:before {
     display: none;
+  }
+
+  .cta-widget .enews {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    form {
+      display: flex;
+      justify-content: space-around;
+    }
+    input {
+      margin-bottom: 0;
+    }
+    .widget-title {
+      margin-bottom: 0;
+    }
   }
 
   .content-sidebar .content,
