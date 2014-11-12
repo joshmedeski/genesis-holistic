@@ -249,70 +249,59 @@ td, th {
   font-weight: normal;
   font-style: normal; }
 
-/* Colors */
 /* Mixins */
-.theme-salmon a, .theme-salmon .site-footer a:hover {
+.theme-salmon a, .theme-salmon .site-footer a:hover, .site-footer .theme-salmon a:hover {
   color: #747dc7; }
-.theme-salmon .nav-primary, .theme-salmon .archive-pagination li, .theme-salmon .nav-primary .sub-menu {
+.theme-salmon .archive-pagination li, .archive-pagination .theme-salmon li, .theme-salmon .nav-primary .sub-menu, .nav-primary .theme-salmon .sub-menu {
   background: #747dc7; }
-.theme-salmon .content .share-filled .facebook .count, .theme-salmon .content .share-filled .facebook .count:hover, .theme-salmon .content .share-filled .googlePlus .count, .theme-salmon .content .share-filled .googlePlus .count:hover, .theme-salmon .content .share-filled .linkedin .count, .theme-salmon .content .share-filled .linkedin .count:hover, .theme-salmon .content .share-filled .pinterest .count, .theme-salmon .content .share-filled .pinterest .count:hover, .theme-salmon .content .share-filled .stumbleupon .count, .theme-salmon .content .share-filled .stumbleupon .count:hover, .theme-salmon .content .share-filled .twitter .count, .theme-salmon .content .share-filled .twitter .count:hover {
+.theme-salmon .content .share-filled .facebook .count, .content .share-filled .facebook .theme-salmon .count, .theme-salmon .content .share-filled .googlePlus .count, .content .share-filled .googlePlus .theme-salmon .count, .theme-salmon .content .share-filled .linkedin .count, .content .share-filled .linkedin .theme-salmon .count, .theme-salmon .content .share-filled .pinterest .count, .content .share-filled .pinterest .theme-salmon .count, .theme-salmon .content .share-filled .stumbleupon .count, .content .share-filled .stumbleupon .theme-salmon .count, .theme-salmon .content .share-filled .twitter .count, .content .share-filled .twitter .theme-salmon .count {
   color: #c7be74; }
-.theme-salmon .cta-widget, .theme-salmon .content .share-filled .facebook .share, .theme-salmon .content .share-filled .facebook:hover .count, .theme-salmon .content .share-filled .googlePlus .share, .theme-salmon .content .share-filled .googlePlus:hover .count, .theme-salmon .content .share-filled .linkedin .share, .theme-salmon .content .share-filled .linkedin:hover .count, .theme-salmon .content .share-filled .pinterest .share, .theme-salmon .content .share-filled .pinterest:hover .count, .theme-salmon .content .share-filled .stumbleupon .share, .theme-salmon .content .share-filled .stumbleupon:hover .count, .theme-salmon .content .share-filled .twitter .share, .theme-salmon .content .share-filled .twitter:hover .count, .theme-salmon .simple-social-icons ul li {
+.theme-salmon .cta-widget, .theme-salmon .content .share-filled .facebook .share, .content .share-filled .facebook .theme-salmon .share, .theme-salmon .content .share-filled .facebook:hover .count, .content .share-filled .facebook:hover .theme-salmon .count, .theme-salmon .content .share-filled .googlePlus .share, .content .share-filled .googlePlus .theme-salmon .share, .theme-salmon .content .share-filled .googlePlus:hover .count, .content .share-filled .googlePlus:hover .theme-salmon .count, .theme-salmon .content .share-filled .linkedin .share, .content .share-filled .linkedin .theme-salmon .share, .theme-salmon .content .share-filled .linkedin:hover .count, .content .share-filled .linkedin:hover .theme-salmon .count, .theme-salmon .content .share-filled .pinterest .share, .content .share-filled .pinterest .theme-salmon .share, .theme-salmon .content .share-filled .pinterest:hover .count, .content .share-filled .pinterest:hover .theme-salmon .count, .theme-salmon .content .share-filled .stumbleupon .share, .content .share-filled .stumbleupon .theme-salmon .share, .theme-salmon .content .share-filled .stumbleupon:hover .count, .content .share-filled .stumbleupon:hover .theme-salmon .count, .theme-salmon .content .share-filled .twitter .share, .content .share-filled .twitter .theme-salmon .share, .theme-salmon .content .share-filled .twitter:hover .count, .content .share-filled .twitter:hover .theme-salmon .count, .theme-salmon .simple-social-icons ul li, .simple-social-icons ul .theme-salmon li {
   background: #c7be74; }
-.theme-salmon .site-title:hover {
-  text-shadow: -0px 0px 0 #c7be74,-1px 1px 0 #c7be74,-2px 2px 0 #c7be74,-3px 3px 0 #c7be74,-4px 4px 0 #c7be74,-5px 5px 0 #c7be74,-6px 6px 0 #c7be74,-7px 7px 0 #c7be74,-8px 8px 0 #c7be74,-9px 9px 0 #c7be74,-10px 10px 0 #c7be74,-11px 11px 0 #c7be74,-12px 12px 0 #c7be74,-13px 13px 0 #c7be74,-14px 14px 0 #c7be74,-15px 15px 0 #c7be74,-16px 16px 0 #c7be74,-17px 17px 0 #c7be74,-18px 18px 0 #c7be74,-19px 19px 0 #c7be74,-20px 20px 0 #c7be74,-21px 21px 0 #c7be74,-22px 22px 0 #c7be74,-23px 23px 0 #c7be74,-24px 24px 0 #c7be74,-25px 25px 0 #c7be74,-26px 26px 0 #c7be74,-27px 27px 0 #c7be74,-28px 28px 0 #c7be74,-29px 29px 0 #c7be74,-30px 30px 0 #c7be74,-31px 31px 0 #c7be74,-32px 32px 0 #c7be74,-33px 33px 0 #c7be74,-34px 34px 0 #c7be74,-35px 35px 0 #c7be74,-36px 36px 0 #c7be74,-37px 37px 0 #c7be74,-38px 38px 0 #c7be74,-39px 39px 0 #c7be74,-40px 40px 0 #c7be74,-41px 41px 0 #c7be74,-42px 42px 0 #c7be74,-43px 43px 0 #c7be74,-44px 44px 0 #c7be74,-45px 45px 0 #c7be74,-46px 46px 0 #c7be74,-47px 47px 0 #c7be74,-48px 48px 0 #c7be74,-49px 49px 0 #c7be74,-50px 50px 0 #c7be74,-51px 51px 0 #c7be74,-52px 52px 0 #c7be74,-53px 53px 0 #c7be74,-54px 54px 0 #c7be74,-55px 55px 0 #c7be74,-56px 56px 0 #c7be74,-57px 57px 0 #c7be74,-58px 58px 0 #c7be74,-59px 59px 0 #c7be74,-60px 60px 0 #c7be74,-61px 61px 0 #c7be74,-62px 62px 0 #c7be74,-63px 63px 0 #c7be74,-64px 64px 0 #c7be74,-65px 65px 0 #c7be74,-66px 66px 0 #c7be74,-67px 67px 0 #c7be74,-68px 68px 0 #c7be74,-69px 69px 0 #c7be74,-70px 70px 0 #c7be74,-71px 71px 0 #c7be74,-72px 72px 0 #c7be74,-73px 73px 0 #c7be74,-74px 74px 0 #c7be74,-75px 75px 0 #c7be74,-76px 76px 0 #c7be74,-77px 77px 0 #c7be74,-78px 78px 0 #c7be74,-79px 79px 0 #c7be74,-80px 80px 0 #c7be74,-81px 81px 0 #c7be74,-82px 82px 0 #c7be74,-83px 83px 0 #c7be74,-84px 84px 0 #c7be74,-85px 85px 0 #c7be74,-86px 86px 0 #c7be74,-87px 87px 0 #c7be74,-88px 88px 0 #c7be74,-89px 89px 0 #c7be74,-90px 90px 0 #c7be74,-91px 91px 0 #c7be74,-92px 92px 0 #c7be74,-93px 93px 0 #c7be74,-94px 94px 0 #c7be74,-95px 95px 0 #c7be74,-96px 96px 0 #c7be74,-97px 97px 0 #c7be74,-98px 98px 0 #c7be74,-99px 99px 0 #c7be74,-100px 100px 0 #c7be74,-101px 101px 0 #c7be74,-102px 102px 0 #c7be74,-103px 103px 0 #c7be74,-104px 104px 0 #c7be74,-105px 105px 0 #c7be74,-106px 106px 0 #c7be74,-107px 107px 0 #c7be74,-108px 108px 0 #c7be74,-109px 109px 0 #c7be74,-110px 110px 0 #c7be74,-111px 111px 0 #c7be74,-112px 112px 0 #c7be74,-113px 113px 0 #c7be74,-114px 114px 0 #c7be74,-115px 115px 0 #c7be74,-116px 116px 0 #c7be74,-117px 117px 0 #c7be74,-118px 118px 0 #c7be74,-119px 119px 0 #c7be74,-120px 120px 0 #c7be74,-121px 121px 0 #c7be74,-122px 122px 0 #c7be74,-123px 123px 0 #c7be74,-124px 124px 0 #c7be74,-125px 125px 0 #c7be74,-126px 126px 0 #c7be74,-127px 127px 0 #c7be74,-128px 128px 0 #c7be74,-129px 129px 0 #c7be74,-130px 130px 0 #c7be74,-131px 131px 0 #c7be74,-132px 132px 0 #c7be74,-133px 133px 0 #c7be74,-134px 134px 0 #c7be74,-135px 135px 0 #c7be74,-136px 136px 0 #c7be74,-137px 137px 0 #c7be74,-138px 138px 0 #c7be74,-139px 139px 0 #c7be74,-140px 140px 0 #c7be74,-141px 141px 0 #c7be74,-142px 142px 0 #c7be74,-143px 143px 0 #c7be74,-144px 144px 0 #c7be74,-145px 145px 0 #c7be74,-146px 146px 0 #c7be74,-147px 147px 0 #c7be74,-148px 148px 0 #c7be74,-149px 149px 0 #c7be74,-150px 150px 0 #c7be74,-151px 151px 0 #c7be74,-152px 152px 0 #c7be74,-153px 153px 0 #c7be74,-154px 154px 0 #c7be74,-155px 155px 0 #c7be74,-156px 156px 0 #c7be74,-157px 157px 0 #c7be74,-158px 158px 0 #c7be74,-159px 159px 0 #c7be74,-160px 160px 0 #c7be74,-161px 161px 0 #c7be74,-162px 162px 0 #c7be74,-163px 163px 0 #c7be74,-164px 164px 0 #c7be74,-165px 165px 0 #c7be74,-166px 166px 0 #c7be74,-167px 167px 0 #c7be74,-168px 168px 0 #c7be74,-169px 169px 0 #c7be74,-170px 170px 0 #c7be74,-171px 171px 0 #c7be74,-172px 172px 0 #c7be74,-173px 173px 0 #c7be74,-174px 174px 0 #c7be74,-175px 175px 0 #c7be74,-176px 176px 0 #c7be74,-177px 177px 0 #c7be74,-178px 178px 0 #c7be74,-179px 179px 0 #c7be74,-180px 180px 0 #c7be74,-181px 181px 0 #c7be74,-182px 182px 0 #c7be74,-183px 183px 0 #c7be74,-184px 184px 0 #c7be74,-185px 185px 0 #c7be74,-186px 186px 0 #c7be74,-187px 187px 0 #c7be74,-188px 188px 0 #c7be74,-189px 189px 0 #c7be74,-190px 190px 0 #c7be74,-191px 191px 0 #c7be74,-192px 192px 0 #c7be74,-193px 193px 0 #c7be74,-194px 194px 0 #c7be74,-195px 195px 0 #c7be74,-196px 196px 0 #c7be74,-197px 197px 0 #c7be74,-198px 198px 0 #c7be74,200px 200px 0 rgba(0, 0, 0, 0); }
 .theme-salmon {
   background: #e1e3f3 !important; }
 
-.theme-aquamarine a, .theme-aquamarine .site-footer a:hover {
+.theme-aquamarine a, .theme-aquamarine .site-footer a:hover, .site-footer .theme-aquamarine a:hover {
   color: #00d4a4; }
-.theme-aquamarine .nav-primary, .theme-aquamarine .archive-pagination li, .theme-aquamarine .nav-primary .sub-menu {
+.theme-aquamarine .archive-pagination li, .archive-pagination .theme-aquamarine li, .theme-aquamarine .nav-primary .sub-menu, .nav-primary .theme-aquamarine .sub-menu {
   background: #00d4a4; }
-.theme-aquamarine .content .share-filled .facebook .count, .theme-aquamarine .content .share-filled .facebook .count:hover, .theme-aquamarine .content .share-filled .googlePlus .count, .theme-aquamarine .content .share-filled .googlePlus .count:hover, .theme-aquamarine .content .share-filled .linkedin .count, .theme-aquamarine .content .share-filled .linkedin .count:hover, .theme-aquamarine .content .share-filled .pinterest .count, .theme-aquamarine .content .share-filled .pinterest .count:hover, .theme-aquamarine .content .share-filled .stumbleupon .count, .theme-aquamarine .content .share-filled .stumbleupon .count:hover, .theme-aquamarine .content .share-filled .twitter .count, .theme-aquamarine .content .share-filled .twitter .count:hover {
+.theme-aquamarine .content .share-filled .facebook .count, .content .share-filled .facebook .theme-aquamarine .count, .theme-aquamarine .content .share-filled .googlePlus .count, .content .share-filled .googlePlus .theme-aquamarine .count, .theme-aquamarine .content .share-filled .linkedin .count, .content .share-filled .linkedin .theme-aquamarine .count, .theme-aquamarine .content .share-filled .pinterest .count, .content .share-filled .pinterest .theme-aquamarine .count, .theme-aquamarine .content .share-filled .stumbleupon .count, .content .share-filled .stumbleupon .theme-aquamarine .count, .theme-aquamarine .content .share-filled .twitter .count, .content .share-filled .twitter .theme-aquamarine .count {
   color: #e800a9; }
-.theme-aquamarine .cta-widget, .theme-aquamarine .content .share-filled .facebook .share, .theme-aquamarine .content .share-filled .facebook:hover .count, .theme-aquamarine .content .share-filled .googlePlus .share, .theme-aquamarine .content .share-filled .googlePlus:hover .count, .theme-aquamarine .content .share-filled .linkedin .share, .theme-aquamarine .content .share-filled .linkedin:hover .count, .theme-aquamarine .content .share-filled .pinterest .share, .theme-aquamarine .content .share-filled .pinterest:hover .count, .theme-aquamarine .content .share-filled .stumbleupon .share, .theme-aquamarine .content .share-filled .stumbleupon:hover .count, .theme-aquamarine .content .share-filled .twitter .share, .theme-aquamarine .content .share-filled .twitter:hover .count, .theme-aquamarine .simple-social-icons ul li {
+.theme-aquamarine .cta-widget, .theme-aquamarine .content .share-filled .facebook .share, .content .share-filled .facebook .theme-aquamarine .share, .theme-aquamarine .content .share-filled .facebook:hover .count, .content .share-filled .facebook:hover .theme-aquamarine .count, .theme-aquamarine .content .share-filled .googlePlus .share, .content .share-filled .googlePlus .theme-aquamarine .share, .theme-aquamarine .content .share-filled .googlePlus:hover .count, .content .share-filled .googlePlus:hover .theme-aquamarine .count, .theme-aquamarine .content .share-filled .linkedin .share, .content .share-filled .linkedin .theme-aquamarine .share, .theme-aquamarine .content .share-filled .linkedin:hover .count, .content .share-filled .linkedin:hover .theme-aquamarine .count, .theme-aquamarine .content .share-filled .pinterest .share, .content .share-filled .pinterest .theme-aquamarine .share, .theme-aquamarine .content .share-filled .pinterest:hover .count, .content .share-filled .pinterest:hover .theme-aquamarine .count, .theme-aquamarine .content .share-filled .stumbleupon .share, .content .share-filled .stumbleupon .theme-aquamarine .share, .theme-aquamarine .content .share-filled .stumbleupon:hover .count, .content .share-filled .stumbleupon:hover .theme-aquamarine .count, .theme-aquamarine .content .share-filled .twitter .share, .content .share-filled .twitter .theme-aquamarine .share, .theme-aquamarine .content .share-filled .twitter:hover .count, .content .share-filled .twitter:hover .theme-aquamarine .count, .theme-aquamarine .simple-social-icons ul li, .simple-social-icons ul .theme-aquamarine li {
   background: #e800a9; }
-.theme-aquamarine .site-title:hover {
-  text-shadow: -0px 0px 0 #e800a9,-1px 1px 0 #e800a9,-2px 2px 0 #e800a9,-3px 3px 0 #e800a9,-4px 4px 0 #e800a9,-5px 5px 0 #e800a9,-6px 6px 0 #e800a9,-7px 7px 0 #e800a9,-8px 8px 0 #e800a9,-9px 9px 0 #e800a9,-10px 10px 0 #e800a9,-11px 11px 0 #e800a9,-12px 12px 0 #e800a9,-13px 13px 0 #e800a9,-14px 14px 0 #e800a9,-15px 15px 0 #e800a9,-16px 16px 0 #e800a9,-17px 17px 0 #e800a9,-18px 18px 0 #e800a9,-19px 19px 0 #e800a9,-20px 20px 0 #e800a9,-21px 21px 0 #e800a9,-22px 22px 0 #e800a9,-23px 23px 0 #e800a9,-24px 24px 0 #e800a9,-25px 25px 0 #e800a9,-26px 26px 0 #e800a9,-27px 27px 0 #e800a9,-28px 28px 0 #e800a9,-29px 29px 0 #e800a9,-30px 30px 0 #e800a9,-31px 31px 0 #e800a9,-32px 32px 0 #e800a9,-33px 33px 0 #e800a9,-34px 34px 0 #e800a9,-35px 35px 0 #e800a9,-36px 36px 0 #e800a9,-37px 37px 0 #e800a9,-38px 38px 0 #e800a9,-39px 39px 0 #e800a9,-40px 40px 0 #e800a9,-41px 41px 0 #e800a9,-42px 42px 0 #e800a9,-43px 43px 0 #e800a9,-44px 44px 0 #e800a9,-45px 45px 0 #e800a9,-46px 46px 0 #e800a9,-47px 47px 0 #e800a9,-48px 48px 0 #e800a9,-49px 49px 0 #e800a9,-50px 50px 0 #e800a9,-51px 51px 0 #e800a9,-52px 52px 0 #e800a9,-53px 53px 0 #e800a9,-54px 54px 0 #e800a9,-55px 55px 0 #e800a9,-56px 56px 0 #e800a9,-57px 57px 0 #e800a9,-58px 58px 0 #e800a9,-59px 59px 0 #e800a9,-60px 60px 0 #e800a9,-61px 61px 0 #e800a9,-62px 62px 0 #e800a9,-63px 63px 0 #e800a9,-64px 64px 0 #e800a9,-65px 65px 0 #e800a9,-66px 66px 0 #e800a9,-67px 67px 0 #e800a9,-68px 68px 0 #e800a9,-69px 69px 0 #e800a9,-70px 70px 0 #e800a9,-71px 71px 0 #e800a9,-72px 72px 0 #e800a9,-73px 73px 0 #e800a9,-74px 74px 0 #e800a9,-75px 75px 0 #e800a9,-76px 76px 0 #e800a9,-77px 77px 0 #e800a9,-78px 78px 0 #e800a9,-79px 79px 0 #e800a9,-80px 80px 0 #e800a9,-81px 81px 0 #e800a9,-82px 82px 0 #e800a9,-83px 83px 0 #e800a9,-84px 84px 0 #e800a9,-85px 85px 0 #e800a9,-86px 86px 0 #e800a9,-87px 87px 0 #e800a9,-88px 88px 0 #e800a9,-89px 89px 0 #e800a9,-90px 90px 0 #e800a9,-91px 91px 0 #e800a9,-92px 92px 0 #e800a9,-93px 93px 0 #e800a9,-94px 94px 0 #e800a9,-95px 95px 0 #e800a9,-96px 96px 0 #e800a9,-97px 97px 0 #e800a9,-98px 98px 0 #e800a9,-99px 99px 0 #e800a9,-100px 100px 0 #e800a9,-101px 101px 0 #e800a9,-102px 102px 0 #e800a9,-103px 103px 0 #e800a9,-104px 104px 0 #e800a9,-105px 105px 0 #e800a9,-106px 106px 0 #e800a9,-107px 107px 0 #e800a9,-108px 108px 0 #e800a9,-109px 109px 0 #e800a9,-110px 110px 0 #e800a9,-111px 111px 0 #e800a9,-112px 112px 0 #e800a9,-113px 113px 0 #e800a9,-114px 114px 0 #e800a9,-115px 115px 0 #e800a9,-116px 116px 0 #e800a9,-117px 117px 0 #e800a9,-118px 118px 0 #e800a9,-119px 119px 0 #e800a9,-120px 120px 0 #e800a9,-121px 121px 0 #e800a9,-122px 122px 0 #e800a9,-123px 123px 0 #e800a9,-124px 124px 0 #e800a9,-125px 125px 0 #e800a9,-126px 126px 0 #e800a9,-127px 127px 0 #e800a9,-128px 128px 0 #e800a9,-129px 129px 0 #e800a9,-130px 130px 0 #e800a9,-131px 131px 0 #e800a9,-132px 132px 0 #e800a9,-133px 133px 0 #e800a9,-134px 134px 0 #e800a9,-135px 135px 0 #e800a9,-136px 136px 0 #e800a9,-137px 137px 0 #e800a9,-138px 138px 0 #e800a9,-139px 139px 0 #e800a9,-140px 140px 0 #e800a9,-141px 141px 0 #e800a9,-142px 142px 0 #e800a9,-143px 143px 0 #e800a9,-144px 144px 0 #e800a9,-145px 145px 0 #e800a9,-146px 146px 0 #e800a9,-147px 147px 0 #e800a9,-148px 148px 0 #e800a9,-149px 149px 0 #e800a9,-150px 150px 0 #e800a9,-151px 151px 0 #e800a9,-152px 152px 0 #e800a9,-153px 153px 0 #e800a9,-154px 154px 0 #e800a9,-155px 155px 0 #e800a9,-156px 156px 0 #e800a9,-157px 157px 0 #e800a9,-158px 158px 0 #e800a9,-159px 159px 0 #e800a9,-160px 160px 0 #e800a9,-161px 161px 0 #e800a9,-162px 162px 0 #e800a9,-163px 163px 0 #e800a9,-164px 164px 0 #e800a9,-165px 165px 0 #e800a9,-166px 166px 0 #e800a9,-167px 167px 0 #e800a9,-168px 168px 0 #e800a9,-169px 169px 0 #e800a9,-170px 170px 0 #e800a9,-171px 171px 0 #e800a9,-172px 172px 0 #e800a9,-173px 173px 0 #e800a9,-174px 174px 0 #e800a9,-175px 175px 0 #e800a9,-176px 176px 0 #e800a9,-177px 177px 0 #e800a9,-178px 178px 0 #e800a9,-179px 179px 0 #e800a9,-180px 180px 0 #e800a9,-181px 181px 0 #e800a9,-182px 182px 0 #e800a9,-183px 183px 0 #e800a9,-184px 184px 0 #e800a9,-185px 185px 0 #e800a9,-186px 186px 0 #e800a9,-187px 187px 0 #e800a9,-188px 188px 0 #e800a9,-189px 189px 0 #e800a9,-190px 190px 0 #e800a9,-191px 191px 0 #e800a9,-192px 192px 0 #e800a9,-193px 193px 0 #e800a9,-194px 194px 0 #e800a9,-195px 195px 0 #e800a9,-196px 196px 0 #e800a9,-197px 197px 0 #e800a9,-198px 198px 0 #e800a9,200px 200px 0 rgba(0, 0, 0, 0); }
 .theme-aquamarine {
-  background: #6effdd !important; }
+  background: #6effde !important; }
 
-.theme-citrus a, .theme-citrus .site-footer a:hover {
+.theme-citrus a, .theme-citrus .site-footer a:hover, .site-footer .theme-citrus a:hover {
   color: #f69e18; }
-.theme-citrus .nav-primary, .theme-citrus .archive-pagination li, .theme-citrus .nav-primary .sub-menu {
+.theme-citrus .archive-pagination li, .archive-pagination .theme-citrus li, .theme-citrus .nav-primary .sub-menu, .nav-primary .theme-citrus .sub-menu {
   background: #f69e18; }
-.theme-citrus .content .share-filled .facebook .count, .theme-citrus .content .share-filled .facebook .count:hover, .theme-citrus .content .share-filled .googlePlus .count, .theme-citrus .content .share-filled .googlePlus .count:hover, .theme-citrus .content .share-filled .linkedin .count, .theme-citrus .content .share-filled .linkedin .count:hover, .theme-citrus .content .share-filled .pinterest .count, .theme-citrus .content .share-filled .pinterest .count:hover, .theme-citrus .content .share-filled .stumbleupon .count, .theme-citrus .content .share-filled .stumbleupon .count:hover, .theme-citrus .content .share-filled .twitter .count, .theme-citrus .content .share-filled .twitter .count:hover {
+.theme-citrus .content .share-filled .facebook .count, .content .share-filled .facebook .theme-citrus .count, .theme-citrus .content .share-filled .googlePlus .count, .content .share-filled .googlePlus .theme-citrus .count, .theme-citrus .content .share-filled .linkedin .count, .content .share-filled .linkedin .theme-citrus .count, .theme-citrus .content .share-filled .pinterest .count, .content .share-filled .pinterest .theme-citrus .count, .theme-citrus .content .share-filled .stumbleupon .count, .content .share-filled .stumbleupon .theme-citrus .count, .theme-citrus .content .share-filled .twitter .count, .content .share-filled .twitter .theme-citrus .count {
   color: #f3be00; }
-.theme-citrus .cta-widget, .theme-citrus .content .share-filled .facebook .share, .theme-citrus .content .share-filled .facebook:hover .count, .theme-citrus .content .share-filled .googlePlus .share, .theme-citrus .content .share-filled .googlePlus:hover .count, .theme-citrus .content .share-filled .linkedin .share, .theme-citrus .content .share-filled .linkedin:hover .count, .theme-citrus .content .share-filled .pinterest .share, .theme-citrus .content .share-filled .pinterest:hover .count, .theme-citrus .content .share-filled .stumbleupon .share, .theme-citrus .content .share-filled .stumbleupon:hover .count, .theme-citrus .content .share-filled .twitter .share, .theme-citrus .content .share-filled .twitter:hover .count, .theme-citrus .simple-social-icons ul li {
+.theme-citrus .cta-widget, .theme-citrus .content .share-filled .facebook .share, .content .share-filled .facebook .theme-citrus .share, .theme-citrus .content .share-filled .facebook:hover .count, .content .share-filled .facebook:hover .theme-citrus .count, .theme-citrus .content .share-filled .googlePlus .share, .content .share-filled .googlePlus .theme-citrus .share, .theme-citrus .content .share-filled .googlePlus:hover .count, .content .share-filled .googlePlus:hover .theme-citrus .count, .theme-citrus .content .share-filled .linkedin .share, .content .share-filled .linkedin .theme-citrus .share, .theme-citrus .content .share-filled .linkedin:hover .count, .content .share-filled .linkedin:hover .theme-citrus .count, .theme-citrus .content .share-filled .pinterest .share, .content .share-filled .pinterest .theme-citrus .share, .theme-citrus .content .share-filled .pinterest:hover .count, .content .share-filled .pinterest:hover .theme-citrus .count, .theme-citrus .content .share-filled .stumbleupon .share, .content .share-filled .stumbleupon .theme-citrus .share, .theme-citrus .content .share-filled .stumbleupon:hover .count, .content .share-filled .stumbleupon:hover .theme-citrus .count, .theme-citrus .content .share-filled .twitter .share, .content .share-filled .twitter .theme-citrus .share, .theme-citrus .content .share-filled .twitter:hover .count, .content .share-filled .twitter:hover .theme-citrus .count, .theme-citrus .simple-social-icons ul li, .simple-social-icons ul .theme-citrus li {
   background: #f3be00; }
-.theme-citrus .site-title:hover {
-  text-shadow: -0px 0px 0 #f3be00,-1px 1px 0 #f3be00,-2px 2px 0 #f3be00,-3px 3px 0 #f3be00,-4px 4px 0 #f3be00,-5px 5px 0 #f3be00,-6px 6px 0 #f3be00,-7px 7px 0 #f3be00,-8px 8px 0 #f3be00,-9px 9px 0 #f3be00,-10px 10px 0 #f3be00,-11px 11px 0 #f3be00,-12px 12px 0 #f3be00,-13px 13px 0 #f3be00,-14px 14px 0 #f3be00,-15px 15px 0 #f3be00,-16px 16px 0 #f3be00,-17px 17px 0 #f3be00,-18px 18px 0 #f3be00,-19px 19px 0 #f3be00,-20px 20px 0 #f3be00,-21px 21px 0 #f3be00,-22px 22px 0 #f3be00,-23px 23px 0 #f3be00,-24px 24px 0 #f3be00,-25px 25px 0 #f3be00,-26px 26px 0 #f3be00,-27px 27px 0 #f3be00,-28px 28px 0 #f3be00,-29px 29px 0 #f3be00,-30px 30px 0 #f3be00,-31px 31px 0 #f3be00,-32px 32px 0 #f3be00,-33px 33px 0 #f3be00,-34px 34px 0 #f3be00,-35px 35px 0 #f3be00,-36px 36px 0 #f3be00,-37px 37px 0 #f3be00,-38px 38px 0 #f3be00,-39px 39px 0 #f3be00,-40px 40px 0 #f3be00,-41px 41px 0 #f3be00,-42px 42px 0 #f3be00,-43px 43px 0 #f3be00,-44px 44px 0 #f3be00,-45px 45px 0 #f3be00,-46px 46px 0 #f3be00,-47px 47px 0 #f3be00,-48px 48px 0 #f3be00,-49px 49px 0 #f3be00,-50px 50px 0 #f3be00,-51px 51px 0 #f3be00,-52px 52px 0 #f3be00,-53px 53px 0 #f3be00,-54px 54px 0 #f3be00,-55px 55px 0 #f3be00,-56px 56px 0 #f3be00,-57px 57px 0 #f3be00,-58px 58px 0 #f3be00,-59px 59px 0 #f3be00,-60px 60px 0 #f3be00,-61px 61px 0 #f3be00,-62px 62px 0 #f3be00,-63px 63px 0 #f3be00,-64px 64px 0 #f3be00,-65px 65px 0 #f3be00,-66px 66px 0 #f3be00,-67px 67px 0 #f3be00,-68px 68px 0 #f3be00,-69px 69px 0 #f3be00,-70px 70px 0 #f3be00,-71px 71px 0 #f3be00,-72px 72px 0 #f3be00,-73px 73px 0 #f3be00,-74px 74px 0 #f3be00,-75px 75px 0 #f3be00,-76px 76px 0 #f3be00,-77px 77px 0 #f3be00,-78px 78px 0 #f3be00,-79px 79px 0 #f3be00,-80px 80px 0 #f3be00,-81px 81px 0 #f3be00,-82px 82px 0 #f3be00,-83px 83px 0 #f3be00,-84px 84px 0 #f3be00,-85px 85px 0 #f3be00,-86px 86px 0 #f3be00,-87px 87px 0 #f3be00,-88px 88px 0 #f3be00,-89px 89px 0 #f3be00,-90px 90px 0 #f3be00,-91px 91px 0 #f3be00,-92px 92px 0 #f3be00,-93px 93px 0 #f3be00,-94px 94px 0 #f3be00,-95px 95px 0 #f3be00,-96px 96px 0 #f3be00,-97px 97px 0 #f3be00,-98px 98px 0 #f3be00,-99px 99px 0 #f3be00,-100px 100px 0 #f3be00,-101px 101px 0 #f3be00,-102px 102px 0 #f3be00,-103px 103px 0 #f3be00,-104px 104px 0 #f3be00,-105px 105px 0 #f3be00,-106px 106px 0 #f3be00,-107px 107px 0 #f3be00,-108px 108px 0 #f3be00,-109px 109px 0 #f3be00,-110px 110px 0 #f3be00,-111px 111px 0 #f3be00,-112px 112px 0 #f3be00,-113px 113px 0 #f3be00,-114px 114px 0 #f3be00,-115px 115px 0 #f3be00,-116px 116px 0 #f3be00,-117px 117px 0 #f3be00,-118px 118px 0 #f3be00,-119px 119px 0 #f3be00,-120px 120px 0 #f3be00,-121px 121px 0 #f3be00,-122px 122px 0 #f3be00,-123px 123px 0 #f3be00,-124px 124px 0 #f3be00,-125px 125px 0 #f3be00,-126px 126px 0 #f3be00,-127px 127px 0 #f3be00,-128px 128px 0 #f3be00,-129px 129px 0 #f3be00,-130px 130px 0 #f3be00,-131px 131px 0 #f3be00,-132px 132px 0 #f3be00,-133px 133px 0 #f3be00,-134px 134px 0 #f3be00,-135px 135px 0 #f3be00,-136px 136px 0 #f3be00,-137px 137px 0 #f3be00,-138px 138px 0 #f3be00,-139px 139px 0 #f3be00,-140px 140px 0 #f3be00,-141px 141px 0 #f3be00,-142px 142px 0 #f3be00,-143px 143px 0 #f3be00,-144px 144px 0 #f3be00,-145px 145px 0 #f3be00,-146px 146px 0 #f3be00,-147px 147px 0 #f3be00,-148px 148px 0 #f3be00,-149px 149px 0 #f3be00,-150px 150px 0 #f3be00,-151px 151px 0 #f3be00,-152px 152px 0 #f3be00,-153px 153px 0 #f3be00,-154px 154px 0 #f3be00,-155px 155px 0 #f3be00,-156px 156px 0 #f3be00,-157px 157px 0 #f3be00,-158px 158px 0 #f3be00,-159px 159px 0 #f3be00,-160px 160px 0 #f3be00,-161px 161px 0 #f3be00,-162px 162px 0 #f3be00,-163px 163px 0 #f3be00,-164px 164px 0 #f3be00,-165px 165px 0 #f3be00,-166px 166px 0 #f3be00,-167px 167px 0 #f3be00,-168px 168px 0 #f3be00,-169px 169px 0 #f3be00,-170px 170px 0 #f3be00,-171px 171px 0 #f3be00,-172px 172px 0 #f3be00,-173px 173px 0 #f3be00,-174px 174px 0 #f3be00,-175px 175px 0 #f3be00,-176px 176px 0 #f3be00,-177px 177px 0 #f3be00,-178px 178px 0 #f3be00,-179px 179px 0 #f3be00,-180px 180px 0 #f3be00,-181px 181px 0 #f3be00,-182px 182px 0 #f3be00,-183px 183px 0 #f3be00,-184px 184px 0 #f3be00,-185px 185px 0 #f3be00,-186px 186px 0 #f3be00,-187px 187px 0 #f3be00,-188px 188px 0 #f3be00,-189px 189px 0 #f3be00,-190px 190px 0 #f3be00,-191px 191px 0 #f3be00,-192px 192px 0 #f3be00,-193px 193px 0 #f3be00,-194px 194px 0 #f3be00,-195px 195px 0 #f3be00,-196px 196px 0 #f3be00,-197px 197px 0 #f3be00,-198px 198px 0 #f3be00,200px 200px 0 rgba(0, 0, 0, 0); }
 .theme-citrus {
   background: #fcdcab !important; }
 
-.theme-pariwinkle a, .theme-pariwinkle .site-footer a:hover {
+.theme-pariwinkle a, .theme-pariwinkle .site-footer a:hover, .site-footer .theme-pariwinkle a:hover {
   color: #747dc7; }
-.theme-pariwinkle .nav-primary, .theme-pariwinkle .archive-pagination li, .theme-pariwinkle .nav-primary .sub-menu {
+.theme-pariwinkle .archive-pagination li, .archive-pagination .theme-pariwinkle li, .theme-pariwinkle .nav-primary .sub-menu, .nav-primary .theme-pariwinkle .sub-menu {
   background: #747dc7; }
-.theme-pariwinkle .content .share-filled .facebook .count, .theme-pariwinkle .content .share-filled .facebook .count:hover, .theme-pariwinkle .content .share-filled .googlePlus .count, .theme-pariwinkle .content .share-filled .googlePlus .count:hover, .theme-pariwinkle .content .share-filled .linkedin .count, .theme-pariwinkle .content .share-filled .linkedin .count:hover, .theme-pariwinkle .content .share-filled .pinterest .count, .theme-pariwinkle .content .share-filled .pinterest .count:hover, .theme-pariwinkle .content .share-filled .stumbleupon .count, .theme-pariwinkle .content .share-filled .stumbleupon .count:hover, .theme-pariwinkle .content .share-filled .twitter .count, .theme-pariwinkle .content .share-filled .twitter .count:hover {
+.theme-pariwinkle .content .share-filled .facebook .count, .content .share-filled .facebook .theme-pariwinkle .count, .theme-pariwinkle .content .share-filled .googlePlus .count, .content .share-filled .googlePlus .theme-pariwinkle .count, .theme-pariwinkle .content .share-filled .linkedin .count, .content .share-filled .linkedin .theme-pariwinkle .count, .theme-pariwinkle .content .share-filled .pinterest .count, .content .share-filled .pinterest .theme-pariwinkle .count, .theme-pariwinkle .content .share-filled .stumbleupon .count, .content .share-filled .stumbleupon .theme-pariwinkle .count, .theme-pariwinkle .content .share-filled .twitter .count, .content .share-filled .twitter .theme-pariwinkle .count {
   color: #c7be74; }
-.theme-pariwinkle .cta-widget, .theme-pariwinkle .content .share-filled .facebook .share, .theme-pariwinkle .content .share-filled .facebook:hover .count, .theme-pariwinkle .content .share-filled .googlePlus .share, .theme-pariwinkle .content .share-filled .googlePlus:hover .count, .theme-pariwinkle .content .share-filled .linkedin .share, .theme-pariwinkle .content .share-filled .linkedin:hover .count, .theme-pariwinkle .content .share-filled .pinterest .share, .theme-pariwinkle .content .share-filled .pinterest:hover .count, .theme-pariwinkle .content .share-filled .stumbleupon .share, .theme-pariwinkle .content .share-filled .stumbleupon:hover .count, .theme-pariwinkle .content .share-filled .twitter .share, .theme-pariwinkle .content .share-filled .twitter:hover .count, .theme-pariwinkle .simple-social-icons ul li {
+.theme-pariwinkle .cta-widget, .theme-pariwinkle .content .share-filled .facebook .share, .content .share-filled .facebook .theme-pariwinkle .share, .theme-pariwinkle .content .share-filled .facebook:hover .count, .content .share-filled .facebook:hover .theme-pariwinkle .count, .theme-pariwinkle .content .share-filled .googlePlus .share, .content .share-filled .googlePlus .theme-pariwinkle .share, .theme-pariwinkle .content .share-filled .googlePlus:hover .count, .content .share-filled .googlePlus:hover .theme-pariwinkle .count, .theme-pariwinkle .content .share-filled .linkedin .share, .content .share-filled .linkedin .theme-pariwinkle .share, .theme-pariwinkle .content .share-filled .linkedin:hover .count, .content .share-filled .linkedin:hover .theme-pariwinkle .count, .theme-pariwinkle .content .share-filled .pinterest .share, .content .share-filled .pinterest .theme-pariwinkle .share, .theme-pariwinkle .content .share-filled .pinterest:hover .count, .content .share-filled .pinterest:hover .theme-pariwinkle .count, .theme-pariwinkle .content .share-filled .stumbleupon .share, .content .share-filled .stumbleupon .theme-pariwinkle .share, .theme-pariwinkle .content .share-filled .stumbleupon:hover .count, .content .share-filled .stumbleupon:hover .theme-pariwinkle .count, .theme-pariwinkle .content .share-filled .twitter .share, .content .share-filled .twitter .theme-pariwinkle .share, .theme-pariwinkle .content .share-filled .twitter:hover .count, .content .share-filled .twitter:hover .theme-pariwinkle .count, .theme-pariwinkle .simple-social-icons ul li, .simple-social-icons ul .theme-pariwinkle li {
   background: #c7be74; }
-.theme-pariwinkle .site-title:hover {
-  text-shadow: -0px 0px 0 #c7be74,-1px 1px 0 #c7be74,-2px 2px 0 #c7be74,-3px 3px 0 #c7be74,-4px 4px 0 #c7be74,-5px 5px 0 #c7be74,-6px 6px 0 #c7be74,-7px 7px 0 #c7be74,-8px 8px 0 #c7be74,-9px 9px 0 #c7be74,-10px 10px 0 #c7be74,-11px 11px 0 #c7be74,-12px 12px 0 #c7be74,-13px 13px 0 #c7be74,-14px 14px 0 #c7be74,-15px 15px 0 #c7be74,-16px 16px 0 #c7be74,-17px 17px 0 #c7be74,-18px 18px 0 #c7be74,-19px 19px 0 #c7be74,-20px 20px 0 #c7be74,-21px 21px 0 #c7be74,-22px 22px 0 #c7be74,-23px 23px 0 #c7be74,-24px 24px 0 #c7be74,-25px 25px 0 #c7be74,-26px 26px 0 #c7be74,-27px 27px 0 #c7be74,-28px 28px 0 #c7be74,-29px 29px 0 #c7be74,-30px 30px 0 #c7be74,-31px 31px 0 #c7be74,-32px 32px 0 #c7be74,-33px 33px 0 #c7be74,-34px 34px 0 #c7be74,-35px 35px 0 #c7be74,-36px 36px 0 #c7be74,-37px 37px 0 #c7be74,-38px 38px 0 #c7be74,-39px 39px 0 #c7be74,-40px 40px 0 #c7be74,-41px 41px 0 #c7be74,-42px 42px 0 #c7be74,-43px 43px 0 #c7be74,-44px 44px 0 #c7be74,-45px 45px 0 #c7be74,-46px 46px 0 #c7be74,-47px 47px 0 #c7be74,-48px 48px 0 #c7be74,-49px 49px 0 #c7be74,-50px 50px 0 #c7be74,-51px 51px 0 #c7be74,-52px 52px 0 #c7be74,-53px 53px 0 #c7be74,-54px 54px 0 #c7be74,-55px 55px 0 #c7be74,-56px 56px 0 #c7be74,-57px 57px 0 #c7be74,-58px 58px 0 #c7be74,-59px 59px 0 #c7be74,-60px 60px 0 #c7be74,-61px 61px 0 #c7be74,-62px 62px 0 #c7be74,-63px 63px 0 #c7be74,-64px 64px 0 #c7be74,-65px 65px 0 #c7be74,-66px 66px 0 #c7be74,-67px 67px 0 #c7be74,-68px 68px 0 #c7be74,-69px 69px 0 #c7be74,-70px 70px 0 #c7be74,-71px 71px 0 #c7be74,-72px 72px 0 #c7be74,-73px 73px 0 #c7be74,-74px 74px 0 #c7be74,-75px 75px 0 #c7be74,-76px 76px 0 #c7be74,-77px 77px 0 #c7be74,-78px 78px 0 #c7be74,-79px 79px 0 #c7be74,-80px 80px 0 #c7be74,-81px 81px 0 #c7be74,-82px 82px 0 #c7be74,-83px 83px 0 #c7be74,-84px 84px 0 #c7be74,-85px 85px 0 #c7be74,-86px 86px 0 #c7be74,-87px 87px 0 #c7be74,-88px 88px 0 #c7be74,-89px 89px 0 #c7be74,-90px 90px 0 #c7be74,-91px 91px 0 #c7be74,-92px 92px 0 #c7be74,-93px 93px 0 #c7be74,-94px 94px 0 #c7be74,-95px 95px 0 #c7be74,-96px 96px 0 #c7be74,-97px 97px 0 #c7be74,-98px 98px 0 #c7be74,-99px 99px 0 #c7be74,-100px 100px 0 #c7be74,-101px 101px 0 #c7be74,-102px 102px 0 #c7be74,-103px 103px 0 #c7be74,-104px 104px 0 #c7be74,-105px 105px 0 #c7be74,-106px 106px 0 #c7be74,-107px 107px 0 #c7be74,-108px 108px 0 #c7be74,-109px 109px 0 #c7be74,-110px 110px 0 #c7be74,-111px 111px 0 #c7be74,-112px 112px 0 #c7be74,-113px 113px 0 #c7be74,-114px 114px 0 #c7be74,-115px 115px 0 #c7be74,-116px 116px 0 #c7be74,-117px 117px 0 #c7be74,-118px 118px 0 #c7be74,-119px 119px 0 #c7be74,-120px 120px 0 #c7be74,-121px 121px 0 #c7be74,-122px 122px 0 #c7be74,-123px 123px 0 #c7be74,-124px 124px 0 #c7be74,-125px 125px 0 #c7be74,-126px 126px 0 #c7be74,-127px 127px 0 #c7be74,-128px 128px 0 #c7be74,-129px 129px 0 #c7be74,-130px 130px 0 #c7be74,-131px 131px 0 #c7be74,-132px 132px 0 #c7be74,-133px 133px 0 #c7be74,-134px 134px 0 #c7be74,-135px 135px 0 #c7be74,-136px 136px 0 #c7be74,-137px 137px 0 #c7be74,-138px 138px 0 #c7be74,-139px 139px 0 #c7be74,-140px 140px 0 #c7be74,-141px 141px 0 #c7be74,-142px 142px 0 #c7be74,-143px 143px 0 #c7be74,-144px 144px 0 #c7be74,-145px 145px 0 #c7be74,-146px 146px 0 #c7be74,-147px 147px 0 #c7be74,-148px 148px 0 #c7be74,-149px 149px 0 #c7be74,-150px 150px 0 #c7be74,-151px 151px 0 #c7be74,-152px 152px 0 #c7be74,-153px 153px 0 #c7be74,-154px 154px 0 #c7be74,-155px 155px 0 #c7be74,-156px 156px 0 #c7be74,-157px 157px 0 #c7be74,-158px 158px 0 #c7be74,-159px 159px 0 #c7be74,-160px 160px 0 #c7be74,-161px 161px 0 #c7be74,-162px 162px 0 #c7be74,-163px 163px 0 #c7be74,-164px 164px 0 #c7be74,-165px 165px 0 #c7be74,-166px 166px 0 #c7be74,-167px 167px 0 #c7be74,-168px 168px 0 #c7be74,-169px 169px 0 #c7be74,-170px 170px 0 #c7be74,-171px 171px 0 #c7be74,-172px 172px 0 #c7be74,-173px 173px 0 #c7be74,-174px 174px 0 #c7be74,-175px 175px 0 #c7be74,-176px 176px 0 #c7be74,-177px 177px 0 #c7be74,-178px 178px 0 #c7be74,-179px 179px 0 #c7be74,-180px 180px 0 #c7be74,-181px 181px 0 #c7be74,-182px 182px 0 #c7be74,-183px 183px 0 #c7be74,-184px 184px 0 #c7be74,-185px 185px 0 #c7be74,-186px 186px 0 #c7be74,-187px 187px 0 #c7be74,-188px 188px 0 #c7be74,-189px 189px 0 #c7be74,-190px 190px 0 #c7be74,-191px 191px 0 #c7be74,-192px 192px 0 #c7be74,-193px 193px 0 #c7be74,-194px 194px 0 #c7be74,-195px 195px 0 #c7be74,-196px 196px 0 #c7be74,-197px 197px 0 #c7be74,-198px 198px 0 #c7be74,200px 200px 0 rgba(0, 0, 0, 0); }
 .theme-pariwinkle {
   background: #e1e3f3 !important; }
 
-.theme-mute a, .theme-mute .site-footer a:hover {
+.theme-mute a, .theme-mute .site-footer a:hover, .site-footer .theme-mute a:hover {
   color: #555; }
-.theme-mute .nav-primary, .theme-mute .archive-pagination li, .theme-mute .nav-primary .sub-menu {
+.theme-mute .archive-pagination li, .archive-pagination .theme-mute li, .theme-mute .nav-primary .sub-menu, .nav-primary .theme-mute .sub-menu {
   background: #555; }
-.theme-mute .content .share-filled .facebook .count, .theme-mute .content .share-filled .facebook .count:hover, .theme-mute .content .share-filled .googlePlus .count, .theme-mute .content .share-filled .googlePlus .count:hover, .theme-mute .content .share-filled .linkedin .count, .theme-mute .content .share-filled .linkedin .count:hover, .theme-mute .content .share-filled .pinterest .count, .theme-mute .content .share-filled .pinterest .count:hover, .theme-mute .content .share-filled .stumbleupon .count, .theme-mute .content .share-filled .stumbleupon .count:hover, .theme-mute .content .share-filled .twitter .count, .theme-mute .content .share-filled .twitter .count:hover {
+.theme-mute .content .share-filled .facebook .count, .content .share-filled .facebook .theme-mute .count, .theme-mute .content .share-filled .googlePlus .count, .content .share-filled .googlePlus .theme-mute .count, .theme-mute .content .share-filled .linkedin .count, .content .share-filled .linkedin .theme-mute .count, .theme-mute .content .share-filled .pinterest .count, .content .share-filled .pinterest .theme-mute .count, .theme-mute .content .share-filled .stumbleupon .count, .content .share-filled .stumbleupon .theme-mute .count, .theme-mute .content .share-filled .twitter .count, .content .share-filled .twitter .theme-mute .count {
   color: #999999; }
-.theme-mute .cta-widget, .theme-mute .content .share-filled .facebook .share, .theme-mute .content .share-filled .facebook:hover .count, .theme-mute .content .share-filled .googlePlus .share, .theme-mute .content .share-filled .googlePlus:hover .count, .theme-mute .content .share-filled .linkedin .share, .theme-mute .content .share-filled .linkedin:hover .count, .theme-mute .content .share-filled .pinterest .share, .theme-mute .content .share-filled .pinterest:hover .count, .theme-mute .content .share-filled .stumbleupon .share, .theme-mute .content .share-filled .stumbleupon:hover .count, .theme-mute .content .share-filled .twitter .share, .theme-mute .content .share-filled .twitter:hover .count, .theme-mute .simple-social-icons ul li {
+.theme-mute .cta-widget, .theme-mute .content .share-filled .facebook .share, .content .share-filled .facebook .theme-mute .share, .theme-mute .content .share-filled .facebook:hover .count, .content .share-filled .facebook:hover .theme-mute .count, .theme-mute .content .share-filled .googlePlus .share, .content .share-filled .googlePlus .theme-mute .share, .theme-mute .content .share-filled .googlePlus:hover .count, .content .share-filled .googlePlus:hover .theme-mute .count, .theme-mute .content .share-filled .linkedin .share, .content .share-filled .linkedin .theme-mute .share, .theme-mute .content .share-filled .linkedin:hover .count, .content .share-filled .linkedin:hover .theme-mute .count, .theme-mute .content .share-filled .pinterest .share, .content .share-filled .pinterest .theme-mute .share, .theme-mute .content .share-filled .pinterest:hover .count, .content .share-filled .pinterest:hover .theme-mute .count, .theme-mute .content .share-filled .stumbleupon .share, .content .share-filled .stumbleupon .theme-mute .share, .theme-mute .content .share-filled .stumbleupon:hover .count, .content .share-filled .stumbleupon:hover .theme-mute .count, .theme-mute .content .share-filled .twitter .share, .content .share-filled .twitter .theme-mute .share, .theme-mute .content .share-filled .twitter:hover .count, .content .share-filled .twitter:hover .theme-mute .count, .theme-mute .simple-social-icons ul li, .simple-social-icons ul .theme-mute li {
   background: #999999; }
-.theme-mute .site-title:hover {
-  text-shadow: -0px 0px 0 #999999,-1px 1px 0 #999999,-2px 2px 0 #999999,-3px 3px 0 #999999,-4px 4px 0 #999999,-5px 5px 0 #999999,-6px 6px 0 #999999,-7px 7px 0 #999999,-8px 8px 0 #999999,-9px 9px 0 #999999,-10px 10px 0 #999999,-11px 11px 0 #999999,-12px 12px 0 #999999,-13px 13px 0 #999999,-14px 14px 0 #999999,-15px 15px 0 #999999,-16px 16px 0 #999999,-17px 17px 0 #999999,-18px 18px 0 #999999,-19px 19px 0 #999999,-20px 20px 0 #999999,-21px 21px 0 #999999,-22px 22px 0 #999999,-23px 23px 0 #999999,-24px 24px 0 #999999,-25px 25px 0 #999999,-26px 26px 0 #999999,-27px 27px 0 #999999,-28px 28px 0 #999999,-29px 29px 0 #999999,-30px 30px 0 #999999,-31px 31px 0 #999999,-32px 32px 0 #999999,-33px 33px 0 #999999,-34px 34px 0 #999999,-35px 35px 0 #999999,-36px 36px 0 #999999,-37px 37px 0 #999999,-38px 38px 0 #999999,-39px 39px 0 #999999,-40px 40px 0 #999999,-41px 41px 0 #999999,-42px 42px 0 #999999,-43px 43px 0 #999999,-44px 44px 0 #999999,-45px 45px 0 #999999,-46px 46px 0 #999999,-47px 47px 0 #999999,-48px 48px 0 #999999,-49px 49px 0 #999999,-50px 50px 0 #999999,-51px 51px 0 #999999,-52px 52px 0 #999999,-53px 53px 0 #999999,-54px 54px 0 #999999,-55px 55px 0 #999999,-56px 56px 0 #999999,-57px 57px 0 #999999,-58px 58px 0 #999999,-59px 59px 0 #999999,-60px 60px 0 #999999,-61px 61px 0 #999999,-62px 62px 0 #999999,-63px 63px 0 #999999,-64px 64px 0 #999999,-65px 65px 0 #999999,-66px 66px 0 #999999,-67px 67px 0 #999999,-68px 68px 0 #999999,-69px 69px 0 #999999,-70px 70px 0 #999999,-71px 71px 0 #999999,-72px 72px 0 #999999,-73px 73px 0 #999999,-74px 74px 0 #999999,-75px 75px 0 #999999,-76px 76px 0 #999999,-77px 77px 0 #999999,-78px 78px 0 #999999,-79px 79px 0 #999999,-80px 80px 0 #999999,-81px 81px 0 #999999,-82px 82px 0 #999999,-83px 83px 0 #999999,-84px 84px 0 #999999,-85px 85px 0 #999999,-86px 86px 0 #999999,-87px 87px 0 #999999,-88px 88px 0 #999999,-89px 89px 0 #999999,-90px 90px 0 #999999,-91px 91px 0 #999999,-92px 92px 0 #999999,-93px 93px 0 #999999,-94px 94px 0 #999999,-95px 95px 0 #999999,-96px 96px 0 #999999,-97px 97px 0 #999999,-98px 98px 0 #999999,-99px 99px 0 #999999,-100px 100px 0 #999999,-101px 101px 0 #999999,-102px 102px 0 #999999,-103px 103px 0 #999999,-104px 104px 0 #999999,-105px 105px 0 #999999,-106px 106px 0 #999999,-107px 107px 0 #999999,-108px 108px 0 #999999,-109px 109px 0 #999999,-110px 110px 0 #999999,-111px 111px 0 #999999,-112px 112px 0 #999999,-113px 113px 0 #999999,-114px 114px 0 #999999,-115px 115px 0 #999999,-116px 116px 0 #999999,-117px 117px 0 #999999,-118px 118px 0 #999999,-119px 119px 0 #999999,-120px 120px 0 #999999,-121px 121px 0 #999999,-122px 122px 0 #999999,-123px 123px 0 #999999,-124px 124px 0 #999999,-125px 125px 0 #999999,-126px 126px 0 #999999,-127px 127px 0 #999999,-128px 128px 0 #999999,-129px 129px 0 #999999,-130px 130px 0 #999999,-131px 131px 0 #999999,-132px 132px 0 #999999,-133px 133px 0 #999999,-134px 134px 0 #999999,-135px 135px 0 #999999,-136px 136px 0 #999999,-137px 137px 0 #999999,-138px 138px 0 #999999,-139px 139px 0 #999999,-140px 140px 0 #999999,-141px 141px 0 #999999,-142px 142px 0 #999999,-143px 143px 0 #999999,-144px 144px 0 #999999,-145px 145px 0 #999999,-146px 146px 0 #999999,-147px 147px 0 #999999,-148px 148px 0 #999999,-149px 149px 0 #999999,-150px 150px 0 #999999,-151px 151px 0 #999999,-152px 152px 0 #999999,-153px 153px 0 #999999,-154px 154px 0 #999999,-155px 155px 0 #999999,-156px 156px 0 #999999,-157px 157px 0 #999999,-158px 158px 0 #999999,-159px 159px 0 #999999,-160px 160px 0 #999999,-161px 161px 0 #999999,-162px 162px 0 #999999,-163px 163px 0 #999999,-164px 164px 0 #999999,-165px 165px 0 #999999,-166px 166px 0 #999999,-167px 167px 0 #999999,-168px 168px 0 #999999,-169px 169px 0 #999999,-170px 170px 0 #999999,-171px 171px 0 #999999,-172px 172px 0 #999999,-173px 173px 0 #999999,-174px 174px 0 #999999,-175px 175px 0 #999999,-176px 176px 0 #999999,-177px 177px 0 #999999,-178px 178px 0 #999999,-179px 179px 0 #999999,-180px 180px 0 #999999,-181px 181px 0 #999999,-182px 182px 0 #999999,-183px 183px 0 #999999,-184px 184px 0 #999999,-185px 185px 0 #999999,-186px 186px 0 #999999,-187px 187px 0 #999999,-188px 188px 0 #999999,-189px 189px 0 #999999,-190px 190px 0 #999999,-191px 191px 0 #999999,-192px 192px 0 #999999,-193px 193px 0 #999999,-194px 194px 0 #999999,-195px 195px 0 #999999,-196px 196px 0 #999999,-197px 197px 0 #999999,-198px 198px 0 #999999,200px 200px 0 rgba(0, 0, 0, 0); }
 .theme-mute {
   background: #a2a2a2 !important; }
 
@@ -321,7 +310,7 @@ td, th {
 body {
   background: #e3e3e3;
   color: #333;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Helvetica Neue', Helvetica, Arial;
   font-size: 18px;
   font-weight: 400;
   line-height: 1.625;
@@ -341,7 +330,7 @@ a, button, input:focus, input[type="button"], input[type="reset"], input[type="s
   color: #fff; }
 
 a {
-  color: #ff827e;
+  color: #00766e;
   text-decoration: none; }
 
 a:hover {
@@ -380,28 +369,36 @@ blockquote::before {
 --------------------------------------------- */
 h1, h2, h3, h4, h5, h6 {
   color: #333;
-  font-family: 'dubielplainregular', serif;
   font-weight: 700;
   line-height: 1.2;
   margin: 0 0 20px; }
 
 h1 {
-  font-size: 36px; }
+  font-size: 36px;
+  font-family: 'Helvetica Neue', Helvetica, Arial;
+  text-transform: uppercase; }
 
 h2 {
-  font-size: 30px; }
+  font-size: 30px;
+  font-family: 'dubielitalic', serif; }
 
 h3 {
-  font-size: 24px; }
+  font-size: 24px;
+  font-family: 'Helvetica Neue', Helvetica, Arial;
+  text-transform: uppercase; }
 
 h4 {
-  font-size: 20px; }
+  font-size: 20px;
+  font-family: 'dubielitalic', serif; }
 
 h5 {
-  font-size: 18px; }
+  font-size: 18px;
+  font-family: 'Helvetica Neue', Helvetica, Arial;
+  text-transform: uppercase; }
 
 h6 {
-  font-size: 16px; }
+  font-size: 16px;
+  font-family: 'dubielitalic', serif; }
 
 /* Objects
 --------------------------------------------- */
@@ -486,7 +483,7 @@ input[type="checkbox"], input[type="image"], input[type="radio"] {
   -webkit-font-smoothing: antialiased; }
 
 button, input[type="button"], input[type="reset"], input[type="submit"], .button {
-  background-color: #ffb4b1;
+  background-color: #00a99d;
   border: 0;
   color: #fff;
   cursor: pointer;
@@ -498,11 +495,11 @@ button, input[type="button"], input[type="reset"], input[type="submit"], .button
   width: auto; }
 
 .footer-widgets button, .footer-widgets input[type="button"], .footer-widgets input[type="reset"], .footer-widgets input[type="submit"], .footer-widgets .button {
-  background-color: #64ffb7;
+  background-color: #64ffb8;
   color: #fff; }
 
 button:hover, input:hover[type="button"], input:hover[type="reset"], input:hover[type="submit"], .button:hover {
-  background-color: #18ff93;
+  background-color: #18ff94;
   color: #fff; }
 
 .entry-content .button:hover {
@@ -725,7 +722,7 @@ a.alignright, img.alignright, .wp-caption.alignright {
   text-align: center; }
 
 .cta-widget {
-  background: #b1d5ff;
+  background: #ff7a86;
   padding: 1px; }
 
 .cta-widget > .wrap {
@@ -756,7 +753,7 @@ a.alignright, img.alignright, .wp-caption.alignright {
 .cta-widget .enews .widget-title {
   margin-bottom: 10px;
   line-height: 1;
-  font-size: 30px; }
+  font-size: 24px; }
 
 .cta-widget .enews input {
   border-color: #fff;
@@ -780,13 +777,13 @@ a.alignright, img.alignright, .wp-caption.alignright {
   margin-bottom: 16px; }
 
 .enews-widget input[type="submit"] {
-  background: rgba(0, 0, 0, 0.4);
+  background: #ffb4b1;
   color: #fff;
   margin: 0;
   width: 100%; }
 
 .enews-widget input:hover[type="submit"] {
-  background: rgba(0, 0, 0, 0.6); }
+  background: #e65672; }
 
 .enews form + p {
   margin-top: 24px; }
@@ -809,11 +806,11 @@ a.alignright, img.alignright, .wp-caption.alignright {
   border-bottom-right-radius: 0; }
 
 .content .share-filled .facebook .count, .content .share-filled .facebook .count:hover, .content .share-filled .googlePlus .count, .content .share-filled .googlePlus .count:hover, .content .share-filled .linkedin .count, .content .share-filled .linkedin .count:hover, .content .share-filled .pinterest .count, .content .share-filled .pinterest .count:hover, .content .share-filled .stumbleupon .count, .content .share-filled .stumbleupon .count:hover, .content .share-filled .twitter .count, .content .share-filled .twitter .count:hover {
-  color: #b1d5ff;
-  border: 1px solid #b1d5ff; }
+  color: #ff7a86;
+  border: 1px solid #ff7a86; }
 
 .content .share-filled .facebook .share, .content .share-filled .facebook:hover .count, .content .share-filled .googlePlus .share, .content .share-filled .googlePlus:hover .count, .content .share-filled .linkedin .share, .content .share-filled .linkedin:hover .count, .content .share-filled .pinterest .share, .content .share-filled .pinterest:hover .count, .content .share-filled .stumbleupon .share, .content .share-filled .stumbleupon:hover .count, .content .share-filled .twitter .share, .content .share-filled .twitter:hover .count {
-  background: #b1d5ff !important; }
+  background: #ff7a86 !important; }
 
 .content .share-filled .facebook:hover .count, .content .share-filled .googlePlus:hover .count, .content .share-filled .linkedin:hover .count, .content .share-filled .pinterest:hover .count, .content .share-filled .stumbleupon:hover .count, .content .share-filled .twitter:hover .count {
   color: #fff; }
@@ -845,7 +842,7 @@ a.alignright, img.alignright, .wp-caption.alignright {
   padding: 0; }
 
 .simple-social-icons ul li {
-  background: #b1d5ff;
+  background: #ff7a86;
   border: none;
   float: left;
   list-style-type: none;
@@ -993,22 +990,18 @@ a.alignright, img.alignright, .wp-caption.alignright {
 /* Primary Navigation
 --------------------------------------------- */
 .nav-primary {
-  background-color: #ffb4b1; }
-
-.nav-primary .wrap {
-  border-color: #fff;
-  border-style: solid;
-  border-width: 1px;
-  margin: 5px; }
+  text-align: center;
+  text-transform: uppercase;
+  background: white; }
 
 .nav-primary .genesis-nav-menu a {
-  color: #fff; }
+  color: #333; }
 
 .nav-primary .sub-menu {
   background-color: rgba(255, 255, 255, 0.05); }
 
 .nav-primary .genesis-nav-menu a:hover, .nav-primary .genesis-nav-menu .sub-menu .current-menu-item > a:hover {
-  color: #333; }
+  color: #e65672; }
 
 .nav-primary .genesis-nav-menu .current-menu-item > a {
   color: #333;
@@ -1123,13 +1116,13 @@ p.entry-meta {
   margin-bottom: 0; }
 
 .archive-pagination li {
-  background: #ffb4b1;
+  background: #00a99d;
   float: left;
   margin-right: 10px; }
   .archive-pagination li:hover {
     background-color: #333; }
   .archive-pagination li .active {
-    background-color: #ffb4b1; }
+    background-color: #00a99d; }
 
 .archive-pagination li a {
   color: #fff;
@@ -1253,7 +1246,7 @@ p.form-submit, .entry-comments .children .comment, .entry-comments .comment-auth
   color: #fff;
   text-decoration: underline; }
   .site-footer a:hover {
-    color: #ffb4b1; }
+    color: #00a99d; }
 
 /* Media Queries
 ---------------------------------------------------------------------------------------------------- */
@@ -1263,78 +1256,104 @@ p.form-submit, .entry-comments .children .comment, .entry-comments .comment-auth
     margin-bottom: 40px;
     margin-top: 40px;
     max-width: 1200px; }
+
   .footer-widgets, .site-inner {
     padding-left: 0;
     padding-right: 0; }
+
   .mobile-first-landing .site-container {
     max-width: 800px; }
+
   .content {
     width: 55%;
     /* 660px */ }
+
   .full-width-content .content {
     width: 100%; }
+
   .footer-widgets-3, .sidebar {
     width: 30%;
     /* 360px */ }
+
   .footer-widgets-1, .footer-widgets-2 {
     width: 25%;
     /* 300px */ }
-  .content, .footer-widgets-1, .footer-widgets-2, .sidebar-content .sidebar, .title-area {
+
+  .content, .footer-widgets-1, .footer-widgets-2, .sidebar-content .sidebar {
     float: left; }
+
   .footer-widgets-3, .header-widget-area, .sidebar, .sidebar-content .content, .site-header .search-form {
     float: right; }
+
   .site-header {
-    padding: 10px 0; }
-  .title-area {
-    text-align: left; }
-  .site-title {
-    text-shadow: -0px 0px 0 #ececec,-1px 1px 0 #ececec,-2px 2px 0 #ececec,-3px 3px 0 #ececec,-4px 4px 0 #ececec,-5px 5px 0 #ececec,-6px 6px 0 #ececec,-7px 7px 0 #ececec,-8px 8px 0 #ececec,-9px 9px 0 #ececec,-10px 10px 0 #ececec,-11px 11px 0 #ececec,-12px 12px 0 #ececec,-13px 13px 0 #ececec,-14px 14px 0 #ececec,-15px 15px 0 #ececec,-16px 16px 0 #ececec,-17px 17px 0 #ececec,-18px 18px 0 #ececec,-19px 19px 0 #ececec,-20px 20px 0 #ececec,-21px 21px 0 #ececec,-22px 22px 0 #ececec,-23px 23px 0 #ececec,-24px 24px 0 #ececec,-25px 25px 0 #ececec,-26px 26px 0 #ececec,-27px 27px 0 #ececec,-28px 28px 0 #ececec,-29px 29px 0 #ececec,-30px 30px 0 #ececec,-31px 31px 0 #ececec,-32px 32px 0 #ececec,-33px 33px 0 #ececec,-34px 34px 0 #ececec,-35px 35px 0 #ececec,-36px 36px 0 #ececec,-37px 37px 0 #ececec,-38px 38px 0 #ececec,-39px 39px 0 #ececec,-40px 40px 0 #ececec,-41px 41px 0 #ececec,-42px 42px 0 #ececec,-43px 43px 0 #ececec,-44px 44px 0 #ececec,-45px 45px 0 #ececec,-46px 46px 0 #ececec,-47px 47px 0 #ececec,-48px 48px 0 #ececec,-49px 49px 0 #ececec,-50px 50px 0 #ececec,-51px 51px 0 #ececec,-52px 52px 0 #ececec,-53px 53px 0 #ececec,-54px 54px 0 #ececec,-55px 55px 0 #ececec,-56px 56px 0 #ececec,-57px 57px 0 #ececec,-58px 58px 0 #ececec,-59px 59px 0 #ececec,-60px 60px 0 #ececec,-61px 61px 0 #ececec,-62px 62px 0 #ececec,-63px 63px 0 #ececec,-64px 64px 0 #ececec,-65px 65px 0 #ececec,-66px 66px 0 #ececec,-67px 67px 0 #ececec,-68px 68px 0 #ececec,-69px 69px 0 #ececec,-70px 70px 0 #ececec,-71px 71px 0 #ececec,-72px 72px 0 #ececec,-73px 73px 0 #ececec,-74px 74px 0 #ececec,-75px 75px 0 #ececec,-76px 76px 0 #ececec,-77px 77px 0 #ececec,-78px 78px 0 #ececec,-79px 79px 0 #ececec,-80px 80px 0 #ececec,-81px 81px 0 #ececec,-82px 82px 0 #ececec,-83px 83px 0 #ececec,-84px 84px 0 #ececec,-85px 85px 0 #ececec,-86px 86px 0 #ececec,-87px 87px 0 #ececec,-88px 88px 0 #ececec,-89px 89px 0 #ececec,-90px 90px 0 #ececec,-91px 91px 0 #ececec,-92px 92px 0 #ececec,-93px 93px 0 #ececec,-94px 94px 0 #ececec,-95px 95px 0 #ececec,-96px 96px 0 #ececec,-97px 97px 0 #ececec,-98px 98px 0 #ececec,-99px 99px 0 #ececec,-100px 100px 0 #ececec,-101px 101px 0 #ececec,-102px 102px 0 #ececec,-103px 103px 0 #ececec,-104px 104px 0 #ececec,-105px 105px 0 #ececec,-106px 106px 0 #ececec,-107px 107px 0 #ececec,-108px 108px 0 #ececec,-109px 109px 0 #ececec,-110px 110px 0 #ececec,-111px 111px 0 #ececec,-112px 112px 0 #ececec,-113px 113px 0 #ececec,-114px 114px 0 #ececec,-115px 115px 0 #ececec,-116px 116px 0 #ececec,-117px 117px 0 #ececec,-118px 118px 0 #ececec,-119px 119px 0 #ececec,-120px 120px 0 #ececec,-121px 121px 0 #ececec,-122px 122px 0 #ececec,-123px 123px 0 #ececec,-124px 124px 0 #ececec,-125px 125px 0 #ececec,-126px 126px 0 #ececec,-127px 127px 0 #ececec,-128px 128px 0 #ececec,-129px 129px 0 #ececec,-130px 130px 0 #ececec,-131px 131px 0 #ececec,-132px 132px 0 #ececec,-133px 133px 0 #ececec,-134px 134px 0 #ececec,-135px 135px 0 #ececec,-136px 136px 0 #ececec,-137px 137px 0 #ececec,-138px 138px 0 #ececec,-139px 139px 0 #ececec,-140px 140px 0 #ececec,-141px 141px 0 #ececec,-142px 142px 0 #ececec,-143px 143px 0 #ececec,-144px 144px 0 #ececec,-145px 145px 0 #ececec,-146px 146px 0 #ececec,-147px 147px 0 #ececec,-148px 148px 0 #ececec,-149px 149px 0 #ececec,-150px 150px 0 #ececec,-151px 151px 0 #ececec,-152px 152px 0 #ececec,-153px 153px 0 #ececec,-154px 154px 0 #ececec,-155px 155px 0 #ececec,-156px 156px 0 #ececec,-157px 157px 0 #ececec,-158px 158px 0 #ececec,-159px 159px 0 #ececec,-160px 160px 0 #ececec,-161px 161px 0 #ececec,-162px 162px 0 #ececec,-163px 163px 0 #ececec,-164px 164px 0 #ececec,-165px 165px 0 #ececec,-166px 166px 0 #ececec,-167px 167px 0 #ececec,-168px 168px 0 #ececec,-169px 169px 0 #ececec,-170px 170px 0 #ececec,-171px 171px 0 #ececec,-172px 172px 0 #ececec,-173px 173px 0 #ececec,-174px 174px 0 #ececec,-175px 175px 0 #ececec,-176px 176px 0 #ececec,-177px 177px 0 #ececec,-178px 178px 0 #ececec,-179px 179px 0 #ececec,-180px 180px 0 #ececec,-181px 181px 0 #ececec,-182px 182px 0 #ececec,-183px 183px 0 #ececec,-184px 184px 0 #ececec,-185px 185px 0 #ececec,-186px 186px 0 #ececec,-187px 187px 0 #ececec,-188px 188px 0 #ececec,-189px 189px 0 #ececec,-190px 190px 0 #ececec,-191px 191px 0 #ececec,-192px 192px 0 #ececec,-193px 193px 0 #ececec,-194px 194px 0 #ececec,-195px 195px 0 #ececec,-196px 196px 0 #ececec,-197px 197px 0 #ececec,-198px 198px 0 #ececec,200px 200px 0 rgba(0, 0, 0, 0); }
+    padding: 10px 0;
+    text-align: center; }
+
+
+
   .site-description {
     margin: 0; }
+
   .header-widget-area {
     text-align: right; }
+
   .site-header .search-form {
     margin: 0;
     width: auto; }
+
   .genesis-nav-menu a {
     padding: 15px 25px; }
+
   .site-header .genesis-nav-menu a {
     padding-bottom: 20px;
     padding-top: 20px; }
+
   .genesis-nav-menu .menu-item {
     display: inline-block; }
+
   .genesis-nav-menu .sub-menu {
     background-color: #fff;
     left: -9999px;
     opacity: 0;
     position: absolute; }
+
   .genesis-nav-menu .sub-menu a {
     border: 1px solid #eee;
     border-top: 0; }
+
   .genesis-nav-menu .sub-menu, .genesis-nav-menu .sub-menu a {
     width: 200px; }
+
   .genesis-nav-menu .sub-menu .sub-menu {
     margin: -55px 0 0 199px; }
+
   .genesis-nav-menu li.highlight a {
     background-color: #e5554e;
     color: #fff;
     font-weight: 400;
     margin-left: 20px; }
+
   .genesis-nav-menu li.highlight a:hover {
     background-color: #333;
     color: #fff; }
+
   .nav-primary .sub-menu {
-    background-color: #ffb4b1;
-    border-top: 1px solid #fff; }
+    background-color: white;
+    border-top: 1px solid #333; }
+
   .nav-primary .sub-menu a {
-    border: 1px solid #fff;
+    border: 1px solid #333;
     border-top: 0; }
+
   .nav-primary .genesis-nav-menu > li:first-child a, .nav-secondary .genesis-nav-menu > li:first-child a {
     padding-left: 0; }
+
   .responsive-menu, .responsive-menu > .menu-item > .sub-menu {
     display: block; }
+
   .responsive-menu-icon, .responsive-menu > .menu-item-has-children:before, .responsive-menu .menu-open.menu-item-has-children:before {
     display: none; }
+
   .cta-widget .enews {
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -1356,51 +1375,75 @@ p.form-submit, .entry-comments .children .comment, .entry-comments .comment-auth
       margin-bottom: 0; }
     .cta-widget .enews .widget-title {
       margin-bottom: 0; }
+
   .content-sidebar .content, .footer-widgets-1, .footer-widgets-2, .sidebar-content .sidebar, .title-area {
     margin-left: 2%; }
+
   .content-sidebar .sidebar, .footer-widgets-3, .header-widget-area, .sidebar-content .content {
     margin-right: 2%; }
+
   .full-width-content .content, .menu-primary, .menu-secondary {
     padding-left: 2%; }
+
   .full-width-content .content {
     padding-right: 5%; }
+
   .comment-list ul.children {
     margin-left: 40px; }
+
   .gallery-item {
     float: left; }
+
   .gallery-columns-2 .gallery-item {
     width: 50%; }
+
   .gallery-columns-3 .gallery-item {
     width: 33%; }
+
   .gallery-columns-4 .gallery-item {
     width: 25%; }
+
   .gallery-columns-5 .gallery-item {
     width: 20%; }
+
   .gallery-columns-6 .gallery-item {
     width: 16.6666%; }
+
   .gallery-columns-7 .gallery-item {
     width: 14.2857%; }
+
   .gallery-columns-8 .gallery-item {
     width: 12.5%; }
+
   .gallery-columns-9 .gallery-item {
     width: 11.1111%; }
+
   .five-sixths, .four-sixths, .one-fourth, .one-half, .one-sixth, .one-third, .three-fourths, .three-sixths, .two-fourths, .two-sixths, .two-thirds {
     float: left;
     margin-left: 2.5641025641%; }
+
   .one-half, .three-sixths, .two-fourths {
     width: 48.7179487179%; }
+
   .one-third, .two-sixths {
     width: 31.6239316239%; }
+
   .four-sixths, .two-thirds {
     width: 65.811965812%; }
+
   .one-fourth {
     width: 23.0769230769%; }
+
   .three-fourths {
     width: 74.358974359%; }
+
   .one-sixth {
     width: 14.5299145299%; }
+
   .five-sixths {
     width: 82.905982906%; }
+
   .first {
     clear: both;
-    margin-left: 0; } }
+    margin-left: 0; }
+ }
