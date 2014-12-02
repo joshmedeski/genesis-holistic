@@ -1,6 +1,6 @@
 <?php
 
-class Simple_Social_Icons_Widget extends WP_Widget {
+class jm_holistic_simple_social_icons_widget extends WP_Widget {
 
   /**
    * Default widget values.
@@ -151,7 +151,7 @@ class Simple_Social_Icons_Widget extends WP_Widget {
       'id_base' => 'simple-social-icons',
     );
 
-    $this->WP_Widget( 'simple-social-icons', __( 'Genesis - Social Icons', 'ssiw' ), $widget_ops, $control_ops );
+    $this->WP_Widget( 'simple-social-icons', __( 'Holistic - Social Icons', 'ssiw' ), $widget_ops, $control_ops );
 
     /** Enqueue icon font */
     add_action( 'wp_enqueue_scripts', array( $this, 'enqueue_css' ) );
@@ -298,6 +298,6 @@ add_action( 'widgets_init', 'ssiw_load_widget' );
  */
 function ssiw_load_widget() {
 
-  register_widget( 'Simple_Social_Icons_Widget' );
+  register_widget( 'jm_holistic_simple_social_icons_widget' );
 
 }
