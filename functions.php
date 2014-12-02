@@ -3,9 +3,9 @@
 include_once( get_template_directory() . '/lib/init.php' );
 
 //* Child theme (do not remove)
-define( 'CHILD_THEME_NAME', 'Amy Jo Beaver' );
+define( 'CHILD_THEME_NAME', 'Holistic' );
 define( 'CHILD_THEME_URL', 'http://medeskidesign.com/themes/holistic/' );
-define( 'CHILD_THEME_VERSION', '0.1.1' );
+define( 'CHILD_THEME_VERSION', '0.2.0' );
 
 // Includes
 require_once( get_stylesheet_directory() . '/tgm_plugin_activation.php');
@@ -94,7 +94,7 @@ genesis_register_sidebar( array(
 add_action( 'wp_enqueue_scripts', 'jm_holistic_disable_simple_social_icons_styles', 11 );
 function jm_holistic_disable_simple_social_icons_styles() {
 
-  if ( class_exists( 'Simple_Social_Icons_Widget' ) ) {
+  if ( class_exists( 'jm_holistic_simple_social_icons_widget' ) ) {
 
     wp_dequeue_style( 'simple-social-icons-font');
 

@@ -5,7 +5,7 @@
   Author: Josh Medeski
   Author URI: http://joshmedeski.com/
 
-  Version: 0.0.2
+  Version: 0.2.0
 
   GitHub Theme URI: https://github.com/joshmedeski/genesis-holistic
   GitHub Branch: master
@@ -619,9 +619,8 @@ th {
 
 .site-inner {
   clear: both;
-  padding-left: 8%;
-  padding-right: 8%;
-  padding-top: 10px;
+  padding-left: 0 8%;
+  margin-top: -8px;
 }
 
 .content-sidebar-wrap {
