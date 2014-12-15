@@ -107,6 +107,16 @@ function jm_holistic_disable_simple_social_icons_styles() {
 // Customizer
 function jm_holistic_customize_register( $wp_customize ) {
 
+  // Logo
+  $wp_customize->add_setting( 'holistic_logo_image' );
+
+  $wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'hero_logo_control', array(
+    'label'       => __( 'Logo', 'holistic' ),
+    'description' => 'The logo will replace the title and description in the header.',
+    'section'     => 'title_tagline',
+    'settings'    => 'holistic_logo_image',
+    ) ) );
+
   // Hero Image
   $wp_customize->add_section( 'hero_section' , array(
     'title'       => __( 'Hero Image', 'holistic' ),
@@ -135,6 +145,21 @@ function jm_holistic_customize_register( $wp_customize ) {
     ) );
 }
 add_action( 'customize_register', 'jm_holistic_customize_register' );
+
+// Display Logo
+add_action( 'genesis_header', 'jm_holistic_logo_display' );
+function jm_holistic_logo_display() {
+  if ( get_theme_mod( 'holistic_logo_image' ) ) {
+    echo "<img src=\"";
+    echo esc_url( get_theme_mod( 'holistic_logo_image' ) );
+    echo "\" alt=\"";
+    echo esc_attr( get_bloginfo( 'name', 'display' ) );
+    echo "\" class=\"logo-image\">";
+    remove_action( 'genesis_site_title', 'genesis_seo_site_title' );
+    remove_action( 'genesis_site_description', 'genesis_seo_site_description' );
+  }
+  else {}
+};
 
 // Display Hero Image
 add_action( 'genesis_after_header', 'jm_holistic_hero_display' );
