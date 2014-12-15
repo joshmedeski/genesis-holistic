@@ -777,12 +777,13 @@ a.alignright, img.alignright, .wp-caption.alignright {
 
 .enews-widget input[type="submit"] {
   background: #ffb4b1;
-  color: #fff;
+  color: #333;
   margin: 0;
   width: 100%; }
 
 .enews-widget input:hover[type="submit"] {
-  background: #e65672; }
+  background: #e65672;
+  color: #fff; }
 
 .enews form + p {
   margin-top: 24px; }
@@ -1029,15 +1030,15 @@ a.alignright, img.alignright, .wp-caption.alignright {
   text-align: center; }
 
 .responsive-menu-icon::before {
-  color: #000;
+  color: #333;
   content: "\f333";
   display: inline-block;
-  font: normal 20px/1 'dashicons';
+  font: normal 28px/1 'dashicons';
   margin: 0 auto;
   padding: 10px; }
 
 .nav-primary .responsive-menu-icon::before, .nav-primary .responsive-menu > .menu-item-has-children:before {
-  color: #fff; }
+  color: #333; }
 
 .responsive-menu > .menu-item-has-children:before {
   content: "\f347";
@@ -1446,3 +1447,4 @@ p.form-submit, .entry-comments .children .comment, .entry-comments .comment-auth
     clear: both;
     margin-left: 0; }
  }
+/*# sourceMappingURL=style.css.map */

@@ -935,13 +935,14 @@ img.alignright,
 
 .enews-widget input[type="submit"] {
   background: $pink-light;
-  color: #fff;
+  color: #333;
   margin: 0;
   width: 100%;
 }
 
 .enews-widget input:hover[type="submit"] {
   background: $pink-dark;
+  color: #fff;
 }
 
 .enews form + p {
@@ -1233,17 +1234,17 @@ img.alignright,
 }
 
 .responsive-menu-icon::before {
-  color: #000;
+  color: $black;
   content: "\f333";
   display: inline-block;
-  font: normal 20px/1 'dashicons';
+  font: normal 28px/1 'dashicons';
   margin: 0 auto;
   padding: 10px;
 }
 
 .nav-primary .responsive-menu-icon::before,
 .nav-primary .responsive-menu > .menu-item-has-children:before {
-  color: #fff;
+  color: $black;
 }
 
 .responsive-menu > .menu-item-has-children:before {
