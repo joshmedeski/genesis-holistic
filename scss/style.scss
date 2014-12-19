@@ -228,10 +228,11 @@ $shadow: unquote($shadow);
 }
 
 @mixin genesis-theme-style($theme-primary-color,$theme-secondary-color) {
-  %theme-primary-color   { color      : $theme-primary-color;   }
-  %theme-primary-bg      { background : $theme-primary-color;   }
-  %theme-secondary-color { color      : $theme-secondary-color; }
-  %theme-secondary-bg    { background : $theme-secondary-color; }
+  %theme-primary-color   { color        : $theme-primary-color;   }
+  %theme-primary-bg      { background   : $theme-primary-color;   }
+  %theme-primary-border  { border-color : $theme-primary-color;   }
+  %theme-secondary-color { color        : $theme-secondary-color; }
+  %theme-secondary-bg    { background   : $theme-secondary-color; }
   %theme-title-shadow {
     @include long-shadow(text, $theme-secondary-color, 200, false, false, left);
   }
@@ -934,14 +935,14 @@ img.alignright,
 }
 
 .enews-widget input[type="submit"] {
-  background: $pink-light;
+  background: rgba(255,255,255,0.75);
   color: #333;
   margin: 0;
   width: 100%;
 }
 
 .enews-widget input:hover[type="submit"] {
-  background: $pink-dark;
+  background: rgba(0,0,0,0.9);
   color: #fff;
 }
 
@@ -1109,7 +1110,8 @@ img.alignright,
 .genesis-nav-menu a:hover,
 .genesis-nav-menu .current-menu-item > a,
 .genesis-nav-menu .sub-menu .current-menu-item > a:hover {
-  color: #e5554e;
+  color: $primary-color;
+  @extend %theme-primary-color;
 }
 
 .genesis-nav-menu .sub-menu {
@@ -1194,6 +1196,7 @@ img.alignright,
 .nav-primary .genesis-nav-menu a:hover,
 .nav-primary .genesis-nav-menu .sub-menu .current-menu-item > a:hover {
   color: $pink-dark;
+  @extend %theme-primary-color;
 }
 
 .nav-primary .genesis-nav-menu .current-menu-item > a {
@@ -1350,36 +1353,40 @@ p.entry-meta {
 }
 
 .archive-pagination li {
-  background: $primary-color;
+  background: #fff;
+  border: 1px solid #333;
   float: left;
   margin-right: 10px;
 
-  @extend %theme-primary-bg;
+  a {
+    color: #333;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 16px;
+    padding: 5px 10px;
+    margin: 5px;
+    border: 1px solid #333;
+  }
 
   &:hover {
-    background-color: #333;
+    background-color: #f5f5f5;
   }
-  .active {
-    background-color: $primary-color;
+  &.active {
+    border-color: $primary-color;
+    @extend %theme-primary-border;
+    a {
+      color: $primary-color;
+      border-color: $primary-color;
+      @extend %theme-primary-color;
+      @extend %theme-primary-border;
+    }
+    &:hover {
+      background-color: #f5f5f5;
+    }
   }
 }
 
-.archive-pagination li a {
-  color: #fff;
-  cursor: pointer;
-  display: inline-block;
-  font-size: 16px;
-  padding: 5px 10px;
-  margin: 5px;
-  border: 1px solid #fff;
-}
 
-.archive-pagination .active {
-  background-color: #555;
-  &:hover {
-    background-color: #555;
-  }
-}
 
 /* Comments
 --------------------------------------------- */
