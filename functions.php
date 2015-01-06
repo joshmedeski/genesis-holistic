@@ -5,7 +5,7 @@ include_once( get_template_directory() . '/lib/init.php' );
 //* Child theme (do not remove)
 define( 'CHILD_THEME_NAME', 'Holistic' );
 define( 'CHILD_THEME_URL', 'http://medeskidesign.com/themes/holistic/' );
-define( 'CHILD_THEME_VERSION', '0.2.0' );
+define( 'CHILD_THEME_VERSION', '0.3.1' );
 
 // Includes
 require_once( get_stylesheet_directory() . '/tgm_plugin_activation.php');
@@ -104,47 +104,17 @@ function jm_holistic_disable_simple_social_icons_styles() {
 
 }
 
-// Customizer
-function jm_holistic_customize_register( $wp_customize ) {
-
-  // Hero Image
-  $wp_customize->add_section( 'hero_section' , array(
-    'title'       => __( 'Hero Image', 'holistic' ),
-    'description' => 'The hero image is displayed below the menu and above the call-to-action area.',
-    'priority'    => 30
-    ) );
-
-  $wp_customize->add_setting( 'holistic_hero_image' );
-
-  $wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'hero_image_control', array(
-    'label'       => __( 'Hero Image', 'holistic' ),
-    'description' => 'Best image size is 1200px by 300px',
-    'section'     => 'hero_section',
-    'settings'    => 'holistic_hero_image',
-    ) ) );
-
-  // Show Post Thumbnail in Hero Section
-  $wp_customize->add_setting('hero_featured_image');
-
-  $wp_customize->add_control( 'hero_post_thumnail_control', array(
-    'description' => 'Replace hero image with featured images on pages that apply',
-    'label'       => 'Show Featured Images',
-    'section'     => 'hero_section',
-    'settings'    => 'hero_featured_image',
-    'type'        => 'checkbox'
-    ) );
-}
-add_action( 'customize_register', 'jm_holistic_customize_register' );
-
-// Display Hero Image
-add_action( 'genesis_after_header', 'jm_holistic_hero_display' );
-function jm_holistic_hero_display() {
-  if ( get_theme_mod( 'holistic_hero_image' ) ) {
-    echo "<img src=\"";
-    echo esc_url( get_theme_mod( 'holistic_hero_image' ) );
-    echo "\" alt=\"";
-    echo esc_attr( get_bloginfo( 'name', 'display' ) );
-    echo "\" class=\"hero-image\">";
-  }
-  else {}
-};
+// Display Logo
+// add_action( 'genesis_header', 'jm_holistic_logo_display' );
+// function jm_holistic_logo_display() {
+//   if ( get_theme_mod( 'holistic_logo_image' ) ) {
+//     echo "<img src=\"";
+//     echo esc_url( get_theme_mod( 'holistic_logo_image' ) );
+//     echo "\" alt=\"";
+//     echo esc_attr( get_bloginfo( 'name', 'display' ) );
+//     echo "\" class=\"logo-image\">";
+//     remove_action( 'genesis_site_title', 'genesis_seo_site_title' );
+//     remove_action( 'genesis_site_description', 'genesis_seo_site_description' );
+//   }
+//   else {}
+// };
